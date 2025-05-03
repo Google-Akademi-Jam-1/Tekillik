@@ -15442,7 +15442,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6829067404700411541, guid: 1d43080e1b4a5e04581929d0055253c5, type: 3}
       propertyPath: lines.Array.size
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 6829067404700411541, guid: 1d43080e1b4a5e04581929d0055253c5, type: 3}
       propertyPath: lines.Array.data[0]
@@ -15491,11 +15491,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6829067404700411541, guid: 1d43080e1b4a5e04581929d0055253c5, type: 3}
       propertyPath: lines.Array.data[10]
-      value: "Bu ve gelecekteki g\xF6revlerin i\xE7in sana bir plazma silah\u0131
-        verece\u011Fiz."
+      value: "K: Anla\u015F\u0131ld\u0131. Hangi te\xE7hizatlarla gidece\u011Fim?"
       objectReference: {fileID: 0}
     - target: {fileID: 6829067404700411541, guid: 1d43080e1b4a5e04581929d0055253c5, type: 3}
       propertyPath: lines.Array.data[11]
+      value: "P: Bu ve gelecekteki g\xF6revlerin i\xE7in sana bir plazma silah\u0131
+        verece\u011Fiz."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6829067404700411541, guid: 1d43080e1b4a5e04581929d0055253c5, type: 3}
+      propertyPath: lines.Array.data[12]
       value: "Bol \u015Fans..."
       objectReference: {fileID: 0}
     m_RemovedComponents: []
