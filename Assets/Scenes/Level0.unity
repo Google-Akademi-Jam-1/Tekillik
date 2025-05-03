@@ -15438,10 +15438,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: DialogueCanvas
       objectReference: {fileID: 0}
-    - target: {fileID: 1166910406693856671, guid: 1d43080e1b4a5e04581929d0055253c5, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3332039178201077225, guid: 1d43080e1b4a5e04581929d0055253c5, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -15521,26 +15517,6 @@ PrefabInstance:
     - target: {fileID: 3332039178201077225, guid: 1d43080e1b4a5e04581929d0055253c5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5974305602640990924, guid: 1d43080e1b4a5e04581929d0055253c5, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 840
-      objectReference: {fileID: 0}
-    - target: {fileID: 5974305602640990924, guid: 1d43080e1b4a5e04581929d0055253c5, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 280
-      objectReference: {fileID: 0}
-    - target: {fileID: 6439098837290148627, guid: 1d43080e1b4a5e04581929d0055253c5, type: 3}
-      propertyPath: m_text
-      value: "DENEME TEXT\u0130"
-      objectReference: {fileID: 0}
-    - target: {fileID: 6439098837290148627, guid: 1d43080e1b4a5e04581929d0055253c5, type: 3}
-      propertyPath: m_VerticalAlignment
-      value: 256
-      objectReference: {fileID: 0}
-    - target: {fileID: 6439098837290148627, guid: 1d43080e1b4a5e04581929d0055253c5, type: 3}
-      propertyPath: m_HorizontalAlignment
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

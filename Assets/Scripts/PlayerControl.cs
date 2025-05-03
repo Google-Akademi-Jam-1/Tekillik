@@ -27,6 +27,7 @@ public class PlayerControl : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
         {
+            Debug.Log("sað tuþa basýlýyor");
             Run(1);
         }
         else if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
@@ -51,7 +52,7 @@ public class PlayerControl : MonoBehaviour
 
     void Run(int direction)
     {
-        rb.velocity = new Vector2(speed * direction, rb.velocity.y);
+        rb.velocity = new Vector2(speed * (float) direction, rb.velocity.y);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
