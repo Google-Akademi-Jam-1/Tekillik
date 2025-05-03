@@ -9544,21 +9544,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lines:
-  - "P: Ho\u015Fgeldin evlad\u0131m, nas\u0131ls\u0131n?"
-  - "K: Sa\u011Folun x bey, biraz heyecanl\u0131y\u0131m. Biliyorsunuz bu i\u015Fte
-    ilk g\xFCn\xFCm."
+  - "Profes\xF6r: Ho\u015Fgeldin ajan Locke, nas\u0131ls\u0131n?"
+  - "Locke: Sa\u011Folun profes\xF6r, biraz heyecanl\u0131y\u0131m. Biliyorsunuz
+    bu i\u015Fte ilk g\xFCn\xFCm."
   - "Uzun zamand\u0131r bu an\u0131 bekliyordum."
-  - "P: Heyecan\u0131nda hakl\u0131s\u0131n. Buras\u0131 tarihin yaz\u0131ld\u0131\u011F\u0131,
+  - "Profes\xF6r: Heyecan\u0131nda hakl\u0131s\u0131n. Buras\u0131 tarihin yaz\u0131ld\u0131\u011F\u0131,
     insanl\u0131\u011F\u0131n kaderinin belirlendi\u011Fi yer."
-  - "Merak etme, ben de Arf Teoremini ilk ke\u015Ffetti\u011Fimde ve buray\u0131
-    kurdu\u011Fumda senin gibiydim. Ne g\xFCnlerdi ama!"
+  - "Merak etme, ben de Arf Teoremini ilk buldu\u011Fumda ve buray\u0131 kurdu\u011Fumda
+    senin gibiydim. Ne g\xFCnlerdi ama!"
   - "Sen sadece g\xF6revini lay\u0131k\u0131yla yerine getir, sana g\xFCvenim tam."
-  - "K: Bahsetti\u011Finiz g\xF6rev nedir?"
-  - "P: 19. y\xFCzy\u0131la gideceksin. Hedefin on milyonlar\u0131 \xF6ld\xFCrecek
-    bir sava\u015F\u0131n sorumlusu. General x'i sana belitrilen konumda \xF6ld\xFCrmen
-    gerekiyor."
-  - "K: Anla\u015F\u0131ld\u0131. Hangi te\xE7hizatlarla gidece\u011Fim?"
-  - "P: Bu ve gelecekteki g\xF6revlerin i\xE7in sana bir plazma silah\u0131 verece\u011Fiz."
+  - "Locke: Bahsetti\u011Finiz g\xF6rev nedir?"
+  - "Profes\xF6r: 19. y\xFCzy\u0131la gideceksin. Hedefin on milyonlar\u0131 \xF6ld\xFCrecek
+    bir sava\u015F\u0131n sorumlusu. General Kreig'i \xD6l\xFCms\xFCz Hisar'da bulup
+    \xF6ld\xFCrmen gerekiyor."
+  - "Locke: Anla\u015F\u0131ld\u0131. Hangi te\xE7hizatlarla gidece\u011Fim?"
+  - "Profes\xF6r: Bu g\xF6revin i\xE7in sana bir plazma silah\u0131 verece\u011Fiz."
   - "Bol \u015Fans..."
   dm: {fileID: 1408824319}
   canvas: {fileID: 1408824318}

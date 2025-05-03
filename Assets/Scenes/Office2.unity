@@ -7888,42 +7888,46 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lines:
-  - "P: Bravo x, temiz i\u015F \xE7\u0131kard\u0131n. Bunca ac\u0131, bunca \xF6l\xFCm..."
+  - "Profes\xF6r: Bravo Locke, temiz i\u015F \xE7\u0131kard\u0131n. Bunca ac\u0131,
+    bunca \xF6l\xFCm..."
   - "Nas\u0131l bir facian\u0131n \xF6n\xFCne ge\xE7ti\u011Fini tahmin bile edemezsin."
-  - "K: Te\u015Fekk\xFCr ederim ama anlamad\u0131\u011F\u0131m bir \u015Fey var."
+  - "Locke: Te\u015Fekk\xFCr ederim ama anlamad\u0131\u011F\u0131m bir \u015Fey var."
   - "Bu adam\u0131n bu sava\u015F\u0131 \xE7\u0131karaca\u011F\u0131n\u0131 Tekillik
     nereden biliyordu? Ne tarih kitaplar\u0131nda ne de ba\u015Fka bir yerde o adam\u0131n
     ismini hi\xE7 duymad\u0131m ben."
-  - "P: Tam da senin biraz \xF6nce yapt\u0131klar\u0131n sayesinde o adam tarih kitaplar\u0131na
-    ge\xE7emeyecek. Biz daima b\xF6yle felaketlerin oldu\u011Fu paralel evrenlerden
-    farkl\u0131 bir ger\xE7eklikte olaca\u011F\u0131z."
+  - "Profes\xF6r: Tam da senin biraz \xF6nce yapt\u0131klar\u0131n sayesinde o adam
+    tarih kitaplar\u0131na ge\xE7emeyecek. Biz daima b\xF6yle felaketlerin oldu\u011Fu
+    paralel evrenlerden farkl\u0131 bir ger\xE7eklikte olaca\u011F\u0131z."
   - "Zaman\u0131n d\u0131\u015F\u0131nda olan bu kurum ve zamanda yolculuk eden sizler
     i\u015Fte bu y\xFCzden k\u0131ymetlisiniz."
-  - "K: Ta\u015Flar yerine oturuyor gibi. Ama ben hala sorumun cevab\u0131n\u0131
+  - "Locke: Ta\u015Flar yerine oturuyor gibi. Ama ben hala sorumun cevab\u0131n\u0131
     alamad\u0131m. \"Siz\" bunu nereden biliyorsunuz da beni bu g\xF6reve g\xF6nderiyorsunuz?
     Siz \u015Fimdi bana ba\u015Fka bir paralel evrenden geldi\u011Finizi mi s\xF6yl\xFCyorsunuz?"
-  - "P: Seni i\u015Fe al\u0131rken bir g\xFCn bu k\u0131vrak zekanla ba\u015Fa \xE7\u0131kmam
-    gerekece\u011Fini de biliyordum x. "
+  - "Profes\xF6r: Seni i\u015Fe al\u0131rken bir g\xFCn bu k\u0131vrak zekanla ba\u015Fa
+    \xE7\u0131kmam gerekece\u011Fini de biliyordum Locke."
   - "Ama merak etme, zaman\u0131 gelince her \u015Feyi anlayacaks\u0131n."
-  - "K: Nas\u0131l isterseniz x bey."
+  - "Locke:: Nas\u0131l isterseniz profes\xF6r.."
   - "S\u0131radaki g\xF6revim nedir?"
-  - "P: 20. y\xFCzy\u0131l \u0130talya's\u0131na, Roma'ya gidiyorsun..."
+  - "Profes\xF6r: 20. y\xFCzy\u0131l \u0130talya's\u0131na, Roma'ya gidiyorsun..."
   - "Via Panisperna laboratuvar\u0131nda bir fizik\xE7i uranyumu n\xF6tron ya\u011Fmuruna
     tutarak n\xFCkleer fisyonu ba\u015Flatacak."
   - "E\u011Fer bu ger\xE7ekle\u015Firse sonras\u0131nda ya\u015Fanacak ilk b\xFCy\xFCk
     sava\u015Fta n\xFCkleer silahlar kullan\u0131lacakt\u0131r. Buna kesinlikle g\xF6z
     yumamay\u0131z."
-  - "K: Bilimsel bir d\xF6n\xFCm noktas\u0131n\u0131 engelliyorum yani."
+  - "Locke: Bilimsel bir d\xF6n\xFCm noktas\u0131n\u0131 engelliyorum yani."
   - "Bu \xF6n\xFCne ge\xE7ti\u011Fim \u015Fey eninde sonunda biri taraf\u0131ndan
     tekrar ke\u015Ffedilmeyecek mi? Sonu\xE7ta Tekillik'in kendisi de bilim sayesinde
     var olan bir kurum de\u011Fil mi?"
-  - "P: Bak x, \u015F\xFCphelerini anl\u0131yorum ama \u015Funu anlamal\u0131s\u0131n:
-    Kararlar\u0131m\u0131z\u0131, b\xFCt\xFCn olas\u0131l\u0131klar\u0131 hesaplayan
-    kuantum bilgisayarlar\u0131n yard\u0131m\u0131yla al\u0131yoruz."
+  - "Profes\xF6r: Bak Locke, \u015F\xFCphelerini anl\u0131yorum ama sen de \u015Funu
+    anlamal\u0131s\u0131n: Kararlar\u0131m\u0131z\u0131, b\xFCt\xFCn olas\u0131l\u0131klar\u0131
+    hesaplayan kuantum bilgisayarlar\u0131n yard\u0131m\u0131yla al\u0131yoruz."
   - "Bu y\xFCzden bizden gelen emirlerde ne olursa olsun zarardan \xE7ok faydaya
     sebep olaca\u011F\u0131n\u0131 bil."
   - "Sen sadece bu g\xF6rev i\xE7in gerekli niteliklere sahip bir ajans\u0131n. Karar
     mekanizmas\u0131n\u0131 bir daha sak\u0131n sorgulayay\u0131m deme."
+  - "Ve son bir \u015Fey..."
+  - "Bu bir gizlilik g\xF6revi. Sak\u0131n ama SAKIN \xE7at\u0131\u015Fmaya girme.
+    Sadece hedefe ula\u015F ve imha et."
   - "Bol \u015Fans..."
   dm: {fileID: 1408824319}
   canvas: {fileID: 1408824318}
