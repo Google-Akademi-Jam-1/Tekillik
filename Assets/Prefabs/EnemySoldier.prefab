@@ -33,7 +33,6 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 638038098133961355}
-  - {fileID: 1543421849584666176}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!70 &5520875973599161848
@@ -68,8 +67,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.2610324, y: 0.13188502}
-  m_Size: {x: 0.4607387, y: 1.7497798}
+  m_Offset: {x: -0.2610324, y: 0.023134837}
+  m_Size: {x: 0.4607387, y: 1.9672779}
   m_Direction: 0
 --- !u!114 &83865642650268780
 MonoBehaviour:
@@ -84,7 +83,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soldier: {fileID: 7209989998995791928}
-  moveSpeed: 0
+  moveSpeed: 5
+  minX: 4.33
+  maxX: 9.59
+  detected: 0
 --- !u!50 &1358554788045600575
 Rigidbody2D:
   serializedVersion: 4
@@ -142,7 +144,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 2.8827, y: 2.8827, z: 2.8827}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1543421849584666176}
   m_Father: {fileID: 6839196531164686202}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &891252675683008133
@@ -243,16 +246,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9049330663066900449}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 4.576039, y: 4.576039, z: 4.576039}
+  m_LocalScale: {x: 1.5874143, y: 1.5874143, z: 1.5874143}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 6839196531164686202}
+  m_Father: {fileID: 638038098133961355}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.26, y: 0.88}
+  m_AnchoredPosition: {x: 0.43709016, y: 0.30526924}
   m_SizeDelta: {x: 1, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &8873510282990617100
