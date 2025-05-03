@@ -24,6 +24,8 @@ public class DialogueSender : MonoBehaviour
             canvas.gameObject.SetActive(true);
         }
     }
+
+
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))

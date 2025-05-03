@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerControl : MonoBehaviour
@@ -9,32 +10,26 @@ public class PlayerControl : MonoBehaviour
     float jumpForce;
 
     Rigidbody2D rb;
+    BoxCollider2D feetCollider;
     bool onGround = true;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        feetCollider = GetComponent<BoxCollider2D>();
     }
     private void Update()
     {
         HandleControls();
     }
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.layer == LayerMask.GetMask("platform"))
-        {
-            onGround = true;
-        }
-    }
-
     void HandleControls()
     {
-        if (Input.GetKeyDown(KeyCode.RightArrow))
+        if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
         {
             Run(1);
         }
-        else if (Input.GetKeyDown(KeyCode.LeftArrow))
+        else if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
         {
             Run(-1);
         }
@@ -45,6 +40,8 @@ public class PlayerControl : MonoBehaviour
     }
     void Jump()
     {
+        onGround = (feetCollider.IsTouchingLayers(LayerMask.GetMask("platform")));
+
         if (onGround)
         {
             onGround = false;

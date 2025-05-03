@@ -28,20 +28,20 @@ public class DialogueManager : MonoBehaviour
 
     private void Update()
     {
-        if (!isDialogueStarted && Input.GetKeyDown(KeyCode.Space))
+        if (!isDialogueStarted && Input.GetKeyDown(KeyCode.E))
         {
             textComp.text = string.Empty;
             RunDialogue();
             isDialogueStarted = true;
         }
-        else if (writingLine && Input.GetKeyDown(KeyCode.Space))
+        else if (writingLine && Input.GetKeyDown(KeyCode.E))
         {
             StopAllCoroutines();
             writingLine = false;
             textComp.text = string.Empty;
             textComp.text = lines[index];
         }
-        else if (!writingLine && isDialogueStarted && Input.GetKeyDown(KeyCode.Space))
+        else if (!writingLine && isDialogueStarted && Input.GetKeyDown(KeyCode.E))
         {
             textComp.text = string.Empty;
             NextLine();
