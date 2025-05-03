@@ -140,7 +140,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &654482958
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1751,6 +1751,7 @@ GameObject:
   - component: {fileID: 932888010}
   - component: {fileID: 932888009}
   - component: {fileID: 932888008}
+  - component: {fileID: 932888011}
   m_Layer: 0
   m_Name: Professor
   m_TagString: Untagged
@@ -1860,6 +1861,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &932888011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932888007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cabad58cbc183bc4b933a5bd2a20e80e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 654482960}
 --- !u!1 &1004951032
 GameObject:
   m_ObjectHideFlags: 0
@@ -7143,6 +7157,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2545333844332300248, guid: 608e85f35c31bc8438f47f41b32a7c4b, type: 3}
       propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 2545333844332300248, guid: 608e85f35c31bc8438f47f41b32a7c4b, type: 3}
+      propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
