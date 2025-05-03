@@ -11,12 +11,19 @@ public class PlayerControl : MonoBehaviour
 
     Rigidbody2D rb;
     BoxCollider2D feetCollider;
-    bool onGround = true;
+    Animator anim;
 
-    private void Start()
+    bool onGround = true;
+    private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         feetCollider = GetComponent<BoxCollider2D>();
+        anim = GetComponent<Animator>();
+    }
+
+    private void Start()
+    {
+
     }
     private void Update()
     {
@@ -25,13 +32,15 @@ public class PlayerControl : MonoBehaviour
 
     void HandleControls()
     {
+        anim.SetBool("isRunning", false);
         if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
         {
-            Debug.Log("sað tuþa basýlýyor");
+            transform.localScale = new Vector3(1, transform.localScale.y, transform.localScale.z);
             Run(1);
         }
         else if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
         {
+            transform.localScale = new Vector3(-1, transform.localScale.y, transform.localScale.z);
             Run(-1);
         }
         if (Input.GetKeyDown(KeyCode.Space))
@@ -52,6 +61,7 @@ public class PlayerControl : MonoBehaviour
 
     void Run(int direction)
     {
+        anim.SetBool("isRunning", true);
         Debug.Log("I should be running right now");
         rb.velocity = new Vector2(speed * (float) direction, rb.velocity.y);
     }
