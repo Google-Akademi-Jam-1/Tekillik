@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class PlayerControl : MonoBehaviour
 {
+<<<<<<< HEAD
     [SerializeField]
     float speed;
 
@@ -56,4 +57,13 @@ public class PlayerControl : MonoBehaviour
     {
         rb.velocity = new Vector2(speed * direction, rb.velocity.y);
     }
+=======
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.tag == "light")
+        {
+
+        }
+    }
+>>>>>>> 6bff7f74bd39aed98f13115032925869db63b645
 }
