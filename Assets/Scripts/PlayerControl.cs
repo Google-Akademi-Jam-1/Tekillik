@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class PlayerControl : MonoBehaviour
 {
+    EnemySoldierController enemySoldierController;
+
     [SerializeField]
     float speed;
 
@@ -24,6 +26,7 @@ public class PlayerControl : MonoBehaviour
 
     private void Awake()
     {
+        enemySoldierController = Object.FindObjectOfType<EnemySoldierController>();
         rb = GetComponent<Rigidbody2D>();
         feetCollider = GetComponent<BoxCollider2D>();
         anim = GetComponent<Animator>();
@@ -48,6 +51,12 @@ public class PlayerControl : MonoBehaviour
         {
             Debug.Log("I also run");
             anim.SetBool("isJumping", false);
+        }
+
+        if(collision.tag == "light")
+        {
+            enemySoldierController.detected = true;
+            anim.SetBool("isDead", true);
         }
     }
     private void OnCollisionEnter2D(Collision2D collision)
