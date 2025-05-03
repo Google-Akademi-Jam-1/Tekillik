@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6839196531164686202}
   - component: {fileID: 5520875973599161848}
+  - component: {fileID: 83865642650268780}
   m_Layer: 0
   m_Name: EnemySoldier
   m_TagString: Untagged
@@ -69,6 +70,18 @@ CapsuleCollider2D:
   m_Offset: {x: -0.007513683, y: -0.007513801}
   m_Size: {x: 1.02596, y: 2.0368922}
   m_Direction: 0
+--- !u!114 &83865642650268780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 212915518630304530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d213ac524068104fb39b15c613ebf8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7209989998995791928
 GameObject:
   m_ObjectHideFlags: 0
