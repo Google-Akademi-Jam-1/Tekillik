@@ -56,6 +56,7 @@ public class PlayerControl : MonoBehaviour
     {
         rb.velocity = new Vector2(speed * direction, rb.velocity.y);
     }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.tag == "light")
