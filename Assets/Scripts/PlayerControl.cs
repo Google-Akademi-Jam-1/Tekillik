@@ -33,8 +33,11 @@ public class PlayerControl : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         bool isFalling = (rb.velocity.y < 0);
+        Debug.Log("Inside on trigger and is Falling is:" + isFalling);
+        
         if (isFalling && feetCollider.IsTouchingLayers(LayerMask.GetMask("platform")))
         {
+            Debug.Log("I also run");
             anim.SetBool("isJumping", false);
         }
     }
@@ -71,7 +74,6 @@ public class PlayerControl : MonoBehaviour
     void Run(int direction)
     {
         anim.SetBool("isRunning", true);
-        Debug.Log("I should be running right now");
         rb.velocity = new Vector2(speed * (float) direction, rb.velocity.y);
     }
 }
