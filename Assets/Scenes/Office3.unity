@@ -2411,7 +2411,7 @@ Transform:
   m_GameObject: {fileID: 932888007}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.02, y: -0.02, z: 0}
+  m_LocalPosition: {x: -4.94, y: -0.02, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2434,8 +2434,9 @@ MonoBehaviour:
   - "K: \u0130yiyim x bey sa\u011Folun, son g\xF6revde de her \u015Fey istedi\u011Fimiz
     gibi gitti."
   - 'P: Biliyorum, haberlerini anbean takip ediyordum zaten.'
-  - "Geldi\u011Findeki o tela\u015Fl\u0131 halinden so\u011Fukkanl\u0131 bir g\xF6rev
-    adam\u0131na d\xF6n\xFC\u015Ft\xFC\u011F\xFCn\xFC g\xF6rmek beni gururland\u0131r\u0131yor."
+  - "Buraya ilk geldi\u011Fin zamanki o tela\u015Fl\u0131 halinden so\u011Fukkanl\u0131
+    bir g\xF6rev adam\u0131na d\xF6n\xFC\u015Ft\xFC\u011F\xFCn\xFC g\xF6rmek beni
+    gururland\u0131r\u0131yor."
   - "K: Evet, zamanla al\u0131\u015Ft\u0131m buradaki ko\u015Fullara. \xDCstelik
     insanlarla da \xE7ok iyi anla\u015F\u0131yorum."
   - "Sanki aile gibiler. Hi\xE7 sahip olamad\u0131\u011F\u0131m o aile..."
@@ -2443,14 +2444,17 @@ MonoBehaviour:
   - 'P: Nedir?'
   - "K: Burada kime sorsam onlar da benim gibi ailesiz b\xFCy\xFCm\xFC\u015F insanlar.
     \xDCstelik hepsi de bekar.."
-  - "Sanki birileri \xF6zellikle d\xFCnyan\u0131n en yaln\u0131z insanlar\u0131n\u0131
-    se\xE7mi\u015F gibiyiz"
-  - "K: Ne \xF6nemi var ki insanlar\u0131n? Ge\xE7mi\u015Fe gidip zaman \xE7izgisinde
+  - "Sanki birileri Tekillik i\xE7in \xF6zellikle d\xFCnyan\u0131n en yaln\u0131z
+    insanlar\u0131n\u0131 se\xE7mi\u015F gibi."
+  - "P: Ne \xF6nemi var ki insanlar\u0131n? Ge\xE7mi\u015Fe gidip zaman \xE7izgisinde
     yapt\u0131\u011F\u0131n her de\u011Fi\u015Fiklik evreni geri d\xF6n\xFClemez
     \u015Fekilde de\u011Fi\u015Ftiriyor zaten."
   - "\xD6nledi\u011Fin sava\u015Flar bile dolayl\u0131 yoldan kim bilir ka\xE7 ailenin
-    kaderini de\u011Fi\u015Ftirdi, ka\xE7 ki\u015Finin ya\u015Fant\u0131s\u0131n\u0131
-    etkiledi bir d\xFC\u015F\xFCnsene..."
+    kaderini de\u011Fi\u015Ftirdi, ka\xE7 ya\u015Fant\u0131y\u0131 etkiledi bir d\xFC\u015F\xFCnsene..."
+  - "Bir ailen olsayd\u0131 bile muhtemelen yapt\u0131\u011F\u0131m\u0131z en ufak
+    oynaman\u0131n sonucunda art\u0131k farkl\u0131 insanlar olacaklard\u0131. Ailen
+    sand\u0131\u011F\u0131n insanlar\u0131 yeni ger\xE7eklikte tan\u0131mayacakt\u0131n
+    bile."
   - "Bu y\xFCzden sizi de buraya geli\u015F amac\u0131n\u0131zdan ayr\u0131lmayacak
     insanlar olarak se\xE7tik."
   - "K: Nas\u0131l yani? Benim de bir yerlerde hi\xE7 tan\u0131mad\u0131\u011F\u0131m
@@ -2466,7 +2470,7 @@ MonoBehaviour:
   - "Ger\xE7ek \u015Fu ki, Arf teoremi bulunup Tekillik kuruldu\u011Funda asl\u0131nda
     gerekli bilgi elimizde yoktu."
   - "As\u0131l can al\u0131c\u0131 k\u0131s\u0131m olan Kassad'\u0131n e\u015Fik
-    sabitinin bulunmas\u0131na 350 y\u0131l vard\u0131."
+    sabitinin bulunmas\u0131na daha 350 y\u0131l vard\u0131."
   - "K: Ama bu sabit zaman\u0131n d\u0131\u015F\u0131na \xE7\u0131kman\u0131n tek
     anahtar\u0131? Bu bilinmeden tekillik nas\u0131l m\xFCmk\xFCn oldu?"
   - "P: Bir d\xF6ng\xFCn\xFCn tamamlanmas\u0131yla, x. \u015Eimdi bu son g\xF6revinde
