@@ -5,8 +5,7 @@ using TMPro;
 
 public class DialogueManager : MonoBehaviour
 {
-    [SerializeField]
-    string[] lines;
+    public string[] lines;
 
     [SerializeField]
     float textSpeed;
@@ -14,6 +13,9 @@ public class DialogueManager : MonoBehaviour
     int index = 0;
     [SerializeField]
     TextMeshProUGUI textComp;
+
+    [SerializeField]
+    Canvas canvas;
 
     bool isDialogueStarted = false;
     bool writingLine = false;
@@ -59,7 +61,7 @@ public class DialogueManager : MonoBehaviour
         if (index >= lines.Length)
         {
             isDialogueStarted = false;
-            this.gameObject.SetActive(false);
+            canvas.gameObject.SetActive(false);
             return;
         }
         else
@@ -76,6 +78,7 @@ public class DialogueManager : MonoBehaviour
             textComp.text += c;
             yield return new WaitForSeconds(textSpeed);
         }
+        writingLine = false;
     }
 
 }
