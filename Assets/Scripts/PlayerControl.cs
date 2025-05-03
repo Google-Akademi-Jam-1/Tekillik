@@ -25,12 +25,12 @@ public class PlayerControl : MonoBehaviour
 
     void HandleControls()
     {
-        if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
+        if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
         {
             Debug.Log("sað tuþa basýlýyor");
             Run(1);
         }
-        else if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
+        else if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
         {
             Run(-1);
         }
@@ -52,6 +52,7 @@ public class PlayerControl : MonoBehaviour
 
     void Run(int direction)
     {
+        Debug.Log("I should be running right now");
         rb.velocity = new Vector2(speed * (float) direction, rb.velocity.y);
     }
 
