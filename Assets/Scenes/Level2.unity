@@ -529,6 +529,32 @@ Transform:
   - {fileID: 1990156916}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &742125792 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7209989998995791928, guid: ccee70bd498fe834b8d1fca6b327b400, type: 3}
+  m_PrefabInstance: {fileID: 8710851690185616449}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &742125795
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 742125792}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4fba77636e1b20b41b5b9cad7f1a18ab, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &745675788
 GameObject:
   m_ObjectHideFlags: 0
@@ -19246,9 +19272,29 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 83865642650268780, guid: ccee70bd498fe834b8d1fca6b327b400, type: 3}
+      propertyPath: soldier
+      value: 
+      objectReference: {fileID: 742125792}
     - target: {fileID: 212915518630304530, guid: ccee70bd498fe834b8d1fca6b327b400, type: 3}
       propertyPath: m_Name
       value: EnemySoldier
+      objectReference: {fileID: 0}
+    - target: {fileID: 891252675683008133, guid: ccee70bd498fe834b8d1fca6b327b400, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1480418394, guid: c0eefa89c6531f8418d655296acddcb5, type: 3}
+    - target: {fileID: 891252675683008133, guid: ccee70bd498fe834b8d1fca6b327b400, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 891252675683008133, guid: ccee70bd498fe834b8d1fca6b327b400, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 891252675683008133, guid: ccee70bd498fe834b8d1fca6b327b400, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6839196531164686202, guid: ccee70bd498fe834b8d1fca6b327b400, type: 3}
       propertyPath: m_LocalPosition.x
@@ -19290,10 +19336,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6839196531164686202, guid: ccee70bd498fe834b8d1fca6b327b400, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7209989998995791928, guid: ccee70bd498fe834b8d1fca6b327b400, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 742125795}
   m_SourcePrefab: {fileID: 100100000, guid: ccee70bd498fe834b8d1fca6b327b400, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
