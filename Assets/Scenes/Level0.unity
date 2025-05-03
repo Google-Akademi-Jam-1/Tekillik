@@ -2430,9 +2430,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lines:
-  - "Ben profes\xF6r\xFCm ulan"
-  - bla bla ve bla...
-  - "\u015Eimdi dediklerimi harfiyen dinle evlat"
+  - "P: G\xFCnayd\u0131n evlad\u0131m nas\u0131ls\u0131n!"
+  - "K: Sa\u011Folun x bey, biraz heyecanl\u0131y\u0131m. Biliyorsunuz bu i\u015Fte
+    ilk g\xFCn\xFCm."
+  - "Uzun zamand\u0131r bu an\u0131 bekliyordum."
+  - "P: Heyecan\u0131nda hakl\u0131s\u0131n. Buras\u0131 tarihin yaz\u0131ld\u0131\u011F\u0131,
+    insanl\u0131\u011F\u0131n kaderinin belirlendi\u011Fi yer."
+  - "Merak etme, ben de Arf Teoremini ilk ke\u015Ffetti\u011Fimde ve buray\u0131
+    kurdu\u011Fumda senin gibiydim."
+  - "Ne g\xFCnlerdi ama!"
+  - "Sen sadece g\xF6revini Lay\u0131k\u0131yla yerine getir, sana g\xFCvenim tam."
+  - "K: Bahsetti\u011Finiz g\xF6rev nedir?"
+  - "P: 19. y\xFCzy\u0131la gideceksin. Hedefin on milyonlar\u0131 \xF6ld\xFCrecek
+    bir sava\u015F\u0131n sorumlusu."
+  - "General x'i sana belitrilen konumda \xF6ld\xFCrmen gerekiyor."
+  - "K: Anla\u015F\u0131ld\u0131. Hangi te\xE7hizatlarla gidece\u011Fim?"
+  - "P: Bu ve gelecekteki g\xF6revlerin i\xE7in sana bir plazma silah\u0131 verece\u011Fiz."
+  - "Bol \u015Fans..."
   dm: {fileID: 1408824319}
   canvas: {fileID: 1408824318}
 --- !u!1 &1004951032
@@ -15441,8 +15455,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6829067404700411541, guid: 1d43080e1b4a5e04581929d0055253c5, type: 3}
+      propertyPath: textSpeed
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6829067404700411541, guid: 1d43080e1b4a5e04581929d0055253c5, type: 3}
       propertyPath: lines.Array.size
-      value: 13
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6829067404700411541, guid: 1d43080e1b4a5e04581929d0055253c5, type: 3}
       propertyPath: lines.Array.data[0]
@@ -15469,7 +15487,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6829067404700411541, guid: 1d43080e1b4a5e04581929d0055253c5, type: 3}
       propertyPath: lines.Array.data[5]
-      value: "\u015Eimdiyse her \u015Fey rutinle\u015Fti, biz de ustala\u015Ft\u0131k."
+      value: "Ne g\xFCnlerdi ama!"
       objectReference: {fileID: 0}
     - target: {fileID: 6829067404700411541, guid: 1d43080e1b4a5e04581929d0055253c5, type: 3}
       propertyPath: lines.Array.data[6]
@@ -15482,8 +15500,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6829067404700411541, guid: 1d43080e1b4a5e04581929d0055253c5, type: 3}
       propertyPath: lines.Array.data[8]
-      value: "P: 20. y\xFCzy\u0131lda on milyonlar\u0131 \xF6ld\xFCrecek bir sava\u015F\u0131n
-        sorumlusu..."
+      value: "P: 19. y\xFCzy\u0131la gideceksin. Hedefin on milyonlar\u0131 \xF6ld\xFCrecek
+        bir sava\u015F\u0131n sorumlusu."
       objectReference: {fileID: 0}
     - target: {fileID: 6829067404700411541, guid: 1d43080e1b4a5e04581929d0055253c5, type: 3}
       propertyPath: lines.Array.data[9]
@@ -15665,6 +15683,22 @@ PrefabInstance:
     - target: {fileID: 19605342124357907, guid: 608e85f35c31bc8438f47f41b32a7c4b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1144189357202101576, guid: 608e85f35c31bc8438f47f41b32a7c4b, type: 3}
+      propertyPath: speed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1144189357202101576, guid: 608e85f35c31bc8438f47f41b32a7c4b, type: 3}
+      propertyPath: jumpForce
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1531762696862071494, guid: 608e85f35c31bc8438f47f41b32a7c4b, type: 3}
+      propertyPath: speed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1531762696862071494, guid: 608e85f35c31bc8438f47f41b32a7c4b, type: 3}
+      propertyPath: jumpForce
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2545333844332300248, guid: 608e85f35c31bc8438f47f41b32a7c4b, type: 3}
       propertyPath: m_Name
