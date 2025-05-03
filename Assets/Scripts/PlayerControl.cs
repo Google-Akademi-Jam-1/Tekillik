@@ -32,11 +32,8 @@ public class PlayerControl : MonoBehaviour
 
     private void Update()
     {
-        if (!isDead)
+        if (isDead) { return; }
             HandleControls();
-
-        // Die checks in itself if it should die or not
-        Die();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -50,14 +47,14 @@ public class PlayerControl : MonoBehaviour
             anim.SetBool("isJumping", false);
         }
     }
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("EnemyBullet"))
-        {
-            Destroy(collision.gameObject);
-            isDead = true;
-        }
-    }
+    //private void OnCollisionEnter2D(Collision2D collision)
+    //{
+    //    if (collision.gameObject.CompareTag("EnemyBullet"))
+    //    {
+    //        Destroy(collision.gameObject);
+    //        Die();
+    //    }
+    //}
 
     void HandleControls()
     {
@@ -96,11 +93,8 @@ public class PlayerControl : MonoBehaviour
 
     void Die()
     {
-        if (isDead)
-        {
-            anim.SetBool("isDead", true);
-            //StartCoroutine(WaitDie());
-        }
+        anim.SetBool("isDead", true);
+        //StartCoroutine(WaitDie());
     }
 
     IEnumerator WaitDie()
