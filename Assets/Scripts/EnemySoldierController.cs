@@ -64,4 +64,18 @@ public class EnemySoldierController : MonoBehaviour
         scale.x = Mathf.Abs(scale.x) * dir;
         transform.localScale = scale;
     }
+
+    public void Detected()
+    {
+        Debug.Log("Detected");
+        int animNum = Random.Range(0, 2);
+        if(animNum == 0)
+        {
+            animator.SetBool("isShooting1", true);
+        }
+        else
+        {
+            animator.SetBool("isShooting2", true);
+        }
+    }
 }
