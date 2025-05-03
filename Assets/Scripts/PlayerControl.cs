@@ -1,5 +1,7 @@
+using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerControl : MonoBehaviour
 {
@@ -9,25 +11,32 @@ public class PlayerControl : MonoBehaviour
     [SerializeField]
     float jumpForce;
 
+    [SerializeField]
+    float waitTimeBeforeRestarting;
+
     Rigidbody2D rb;
     BoxCollider2D feetCollider;
+    CapsuleCollider2D charCollider;
     Animator anim;
 
     bool onGround = true;
+    bool isDead = false;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         feetCollider = GetComponent<BoxCollider2D>();
         anim = GetComponent<Animator>();
+        charCollider = GetComponent<CapsuleCollider2D>();
     }
 
-    private void Start()
-    {
-
-    }
     private void Update()
     {
-        HandleControls();
+        if (!isDead)
+            HandleControls();
+
+        // Die checks in itself if it should die or not
+        Die();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -39,6 +48,14 @@ public class PlayerControl : MonoBehaviour
         {
             Debug.Log("I also run");
             anim.SetBool("isJumping", false);
+        }
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("EnemyBullet"))
+        {
+            Destroy(collision.gameObject);
+            isDead = true;
         }
     }
 
@@ -75,5 +92,20 @@ public class PlayerControl : MonoBehaviour
     {
         anim.SetBool("isRunning", true);
         rb.velocity = new Vector2(speed * (float) direction, rb.velocity.y);
+    }
+
+    void Die()
+    {
+        if (isDead)
+        {
+            anim.SetBool("isDead", true);
+            //StartCoroutine(WaitDie());
+        }
+    }
+
+    IEnumerator WaitDie()
+    {
+        yield return new WaitForSeconds(waitTimeBeforeRestarting);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
