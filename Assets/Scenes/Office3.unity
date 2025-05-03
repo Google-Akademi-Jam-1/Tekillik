@@ -2430,22 +2430,57 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lines:
-  - "P: G\xFCnayd\u0131n evlad\u0131m nas\u0131ls\u0131n!"
-  - "K: Sa\u011Folun x bey, biraz heyecanl\u0131y\u0131m. Biliyorsunuz bu i\u015Fte
-    ilk g\xFCn\xFCm."
-  - "Uzun zamand\u0131r bu an\u0131 bekliyordum."
-  - "P: Heyecan\u0131nda hakl\u0131s\u0131n. Buras\u0131 tarihin yaz\u0131ld\u0131\u011F\u0131,
-    insanl\u0131\u011F\u0131n kaderinin belirlendi\u011Fi yer."
-  - "Merak etme, ben de Arf Teoremini ilk ke\u015Ffetti\u011Fimde ve buray\u0131
-    kurdu\u011Fumda senin gibiydim. Ne g\xFCnlerdi ama!"
-  - "Sen sadece g\xF6revini Lay\u0131k\u0131yla yerine getir, sana g\xFCvenim tam."
-  - "K: Bahsetti\u011Finiz g\xF6rev nedir?"
-  - "P: 19. y\xFCzy\u0131la gideceksin. Hedefin on milyonlar\u0131 \xF6ld\xFCrecek
-    bir sava\u015F\u0131n sorumlusu. General x'i sana belitrilen konumda \xF6ld\xFCrmen
-    gerekiyor."
-  - "K: Anla\u015F\u0131ld\u0131. Hangi te\xE7hizatlarla gidece\u011Fim?"
-  - "P: Bu ve gelecekteki g\xF6revlerin i\xE7in sana bir plazma silah\u0131 verece\u011Fiz."
-  - "Bol \u015Fans..."
+  - "P: Ho\u015Fgeldin x, nas\u0131ls\u0131n?"
+  - "K: \u0130yiyim x bey sa\u011Folun, son g\xF6revde de her \u015Fey istedi\u011Fimiz
+    gibi gitti."
+  - 'P: Biliyorum, haberlerini anbean takip ediyordum zaten.'
+  - "Geldi\u011Findeki o tela\u015Fl\u0131 halinden so\u011Fukkanl\u0131 bir g\xF6rev
+    adam\u0131na d\xF6n\xFC\u015Ft\xFC\u011F\xFCn\xFC g\xF6rmek beni gururland\u0131r\u0131yor."
+  - "K: Evet, zamanla al\u0131\u015Ft\u0131m buradaki ko\u015Fullara. \xDCstelik
+    insanlarla da \xE7ok iyi anla\u015F\u0131yorum."
+  - "Sanki aile gibiler. Hi\xE7 sahip olamad\u0131\u011F\u0131m o aile..."
+  - "Ama bir \u015Fey dikkatimi \xE7ekti x bey."
+  - 'P: Nedir?'
+  - "K: Burada kime sorsam onlar da benim gibi ailesiz b\xFCy\xFCm\xFC\u015F insanlar.
+    \xDCstelik hepsi de bekar.."
+  - "Sanki birileri \xF6zellikle d\xFCnyan\u0131n en yaln\u0131z insanlar\u0131n\u0131
+    se\xE7mi\u015F gibiyiz"
+  - "K: Ne \xF6nemi var ki insanlar\u0131n? Ge\xE7mi\u015Fe gidip zaman \xE7izgisinde
+    yapt\u0131\u011F\u0131n her de\u011Fi\u015Fiklik evreni geri d\xF6n\xFClemez
+    \u015Fekilde de\u011Fi\u015Ftiriyor zaten."
+  - "\xD6nledi\u011Fin sava\u015Flar bile dolayl\u0131 yoldan kim bilir ka\xE7 ailenin
+    kaderini de\u011Fi\u015Ftirdi, ka\xE7 ki\u015Finin ya\u015Fant\u0131s\u0131n\u0131
+    etkiledi bir d\xFC\u015F\xFCnsene..."
+  - "Bu y\xFCzden sizi de buraya geli\u015F amac\u0131n\u0131zdan ayr\u0131lmayacak
+    insanlar olarak se\xE7tik."
+  - "K: Nas\u0131l yani? Benim de bir yerlerde hi\xE7 tan\u0131mad\u0131\u011F\u0131m
+    bir ailem olabilir mi yani?"
+  - "P: Bunu asla bilemeyiz. Bilsen bile Tekillik'in eli bir g\xFCn zaman\u0131 de\u011Fi\u015Ftirir
+    ve hi\xE7 ya\u015Fanmam\u0131\u015F gibi silinebilir her \u015Fey."
+  - "Burada \xF6nemli olan tek mesele insan uygarl\u0131\u011F\u0131n\u0131n hep
+    ileri gitmesi."
+  - "Ve bunun i\xE7in sana son ve en \xF6nemli olan bu g\xF6rev d\xFC\u015F\xFCyor.
+    Can kula\u011F\u0131yla dinle beni."
+  - "K: Son mu? Ne demek \u015Fimdi bu, bana ihtiya\xE7 kalmad\u0131 m\u0131 burada?"
+  - "P: Sana hep ihtiya\xE7 olacak x. Bazen bu halin, bazen ba\u015Fka bir halin."
+  - "Ger\xE7ek \u015Fu ki, Arf teoremi bulunup Tekillik kuruldu\u011Funda asl\u0131nda
+    gerekli bilgi elimizde yoktu."
+  - "As\u0131l can al\u0131c\u0131 k\u0131s\u0131m olan Kassad'\u0131n e\u015Fik
+    sabitinin bulunmas\u0131na 350 y\u0131l vard\u0131."
+  - "K: Ama bu sabit zaman\u0131n d\u0131\u015F\u0131na \xE7\u0131kman\u0131n tek
+    anahtar\u0131? Bu bilinmeden tekillik nas\u0131l m\xFCmk\xFCn oldu?"
+  - "P: Bir d\xF6ng\xFCn\xFCn tamamlanmas\u0131yla, x. \u015Eimdi bu son g\xF6revinde
+    sana verece\u011Fim belgeleri bir profes\xF6re vereceksin. Bu bilgiler Tekillik'in
+    bizim evrenimizde tekrar kurulmas\u0131n\u0131 m\xFCmk\xFCn k\u0131lacak."
+  - "Bu bittikten sonra art\u0131k \xFCst\xFCm\xFCze d\xFC\u015Fenler bitiyor,  emekli
+    oluyoruz."
+  - "K: Zaman\u0131 gelince \xF6\u011Freneceksin dedi\u011Fin \u015Fey buydu yani
+    demek."
+  - "D\xF6ng\xFC benimle tamamlan\u0131yor demek ha. B\xFCt\xFCn s\u0131r perdesi
+    araland\u0131 bir anda."
+  - "P: En g\xFCvenilir ajan\u0131m\u0131z sensin, x. Ba\u015Faraca\u011F\u0131ndan
+    \u015F\xFCphem yok ama ne olur dikkatli ol."
+  - 'K: Peki, x bey.'
   dm: {fileID: 1408824319}
   canvas: {fileID: 1408824318}
 --- !u!1 &1004951032
