@@ -6,6 +6,8 @@ public class EnemySoldierController : MonoBehaviour
 {
     [SerializeField]
     GameObject soldier;
+    [SerializeField]
+    float moveSpeed;
 
     private SpriteRenderer soldierSR;
 

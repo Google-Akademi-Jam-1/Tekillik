@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6839196531164686202}
   - component: {fileID: 5520875973599161848}
   - component: {fileID: 83865642650268780}
+  - component: {fileID: 1358554788045600575}
   m_Layer: 0
   m_Name: EnemySoldier
   m_TagString: Untagged
@@ -28,8 +29,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4.91, y: -2.006, z: 0}
-  m_LocalScale: {x: 1.0088, y: 1.0088, z: 1.0088}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1.2476691, y: 1.2476691, z: 1.2476691}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 638038098133961355}
   - {fileID: 1543421849584666176}
@@ -67,8 +68,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.007513683, y: -0.007513801}
-  m_Size: {x: 1.02596, y: 2.0368922}
+  m_Offset: {x: -0.2610324, y: 0.13188502}
+  m_Size: {x: 0.4607387, y: 1.7497798}
   m_Direction: 0
 --- !u!114 &83865642650268780
 MonoBehaviour:
@@ -82,6 +83,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d213ac524068104fb39b15c613ebf8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  soldier: {fileID: 7209989998995791928}
+  moveSpeed: 0
+--- !u!50 &1358554788045600575
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 212915518630304530}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &7209989998995791928
 GameObject:
   m_ObjectHideFlags: 0
@@ -92,6 +122,7 @@ GameObject:
   m_Component:
   - component: {fileID: 638038098133961355}
   - component: {fileID: 891252675683008133}
+  - component: {fileID: 5023310237203901837}
   m_Layer: 0
   m_Name: enemySprite
   m_TagString: Untagged
@@ -166,6 +197,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &5023310237203901837
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7209989998995791928}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4fba77636e1b20b41b5b9cad7f1a18ab, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &9049330663066900449
 GameObject:
   m_ObjectHideFlags: 0
