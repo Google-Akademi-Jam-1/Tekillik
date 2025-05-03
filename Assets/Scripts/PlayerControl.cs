@@ -30,6 +30,15 @@ public class PlayerControl : MonoBehaviour
         HandleControls();
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        bool isFalling = (rb.velocity.y < 0);
+        if (isFalling && feetCollider.IsTouchingLayers(LayerMask.GetMask("platform")))
+        {
+            anim.SetBool("isJumping", false);
+        }
+    }
+
     void HandleControls()
     {
         anim.SetBool("isRunning", false);
@@ -50,12 +59,12 @@ public class PlayerControl : MonoBehaviour
     }
     void Jump()
     {
-        onGround = (feetCollider.IsTouchingLayers(LayerMask.GetMask("platform")));
-
+        onGround = feetCollider.IsTouchingLayers(LayerMask.GetMask("platform"));
         if (onGround)
         {
             onGround = false;
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y + jumpForce);
+            anim.SetBool("isJumping", true);
         }
     }
 
@@ -64,13 +73,5 @@ public class PlayerControl : MonoBehaviour
         anim.SetBool("isRunning", true);
         Debug.Log("I should be running right now");
         rb.velocity = new Vector2(speed * (float) direction, rb.velocity.y);
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if(collision.tag == "light")
-        {
-
-        }
     }
 }
