@@ -2437,13 +2437,12 @@ MonoBehaviour:
   - "P: Heyecan\u0131nda hakl\u0131s\u0131n. Buras\u0131 tarihin yaz\u0131ld\u0131\u011F\u0131,
     insanl\u0131\u011F\u0131n kaderinin belirlendi\u011Fi yer."
   - "Merak etme, ben de Arf Teoremini ilk ke\u015Ffetti\u011Fimde ve buray\u0131
-    kurdu\u011Fumda senin gibiydim."
-  - "Ne g\xFCnlerdi ama!"
+    kurdu\u011Fumda senin gibiydim. Ne g\xFCnlerdi ama!"
   - "Sen sadece g\xF6revini Lay\u0131k\u0131yla yerine getir, sana g\xFCvenim tam."
   - "K: Bahsetti\u011Finiz g\xF6rev nedir?"
   - "P: 19. y\xFCzy\u0131la gideceksin. Hedefin on milyonlar\u0131 \xF6ld\xFCrecek
-    bir sava\u015F\u0131n sorumlusu."
-  - "General x'i sana belitrilen konumda \xF6ld\xFCrmen gerekiyor."
+    bir sava\u015F\u0131n sorumlusu. General x'i sana belitrilen konumda \xF6ld\xFCrmen
+    gerekiyor."
   - "K: Anla\u015F\u0131ld\u0131. Hangi te\xE7hizatlarla gidece\u011Fim?"
   - "P: Bu ve gelecekteki g\xF6revlerin i\xE7in sana bir plazma silah\u0131 verece\u011Fiz."
   - "Bol \u015Fans..."
@@ -15456,7 +15455,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6829067404700411541, guid: 1d43080e1b4a5e04581929d0055253c5, type: 3}
       propertyPath: textSpeed
-      value: 0.3
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 6829067404700411541, guid: 1d43080e1b4a5e04581929d0055253c5, type: 3}
       propertyPath: lines.Array.size
