@@ -34,7 +34,7 @@ public class PlayerControl : MonoBehaviour
         {
             Run(-1);
         }
-        else if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             Jump();
         }

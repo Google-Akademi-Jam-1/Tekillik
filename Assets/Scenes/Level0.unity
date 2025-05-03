@@ -15645,11 +15645,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 19605342124357907, guid: 608e85f35c31bc8438f47f41b32a7c4b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.74
+      value: -3.694
       objectReference: {fileID: 0}
     - target: {fileID: 19605342124357907, guid: 608e85f35c31bc8438f47f41b32a7c4b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.3
+      value: 0.206
       objectReference: {fileID: 0}
     - target: {fileID: 19605342124357907, guid: 608e85f35c31bc8438f47f41b32a7c4b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -15699,6 +15699,18 @@ PrefabInstance:
       propertyPath: jumpForce
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 1830361786418413382, guid: 608e85f35c31bc8438f47f41b32a7c4b, type: 3}
+      propertyPath: m_Size.x
+      value: 0.9999991
+      objectReference: {fileID: 0}
+    - target: {fileID: 1830361786418413382, guid: 608e85f35c31bc8438f47f41b32a7c4b, type: 3}
+      propertyPath: m_Size.y
+      value: 2.067939
+      objectReference: {fileID: 0}
+    - target: {fileID: 1830361786418413382, guid: 608e85f35c31bc8438f47f41b32a7c4b, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.033971526
+      objectReference: {fileID: 0}
     - target: {fileID: 2545333844332300248, guid: 608e85f35c31bc8438f47f41b32a7c4b, type: 3}
       propertyPath: m_Name
       value: Player
@@ -15711,6 +15723,26 @@ PrefabInstance:
       propertyPath: jumpForce
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 5235129113930472568, guid: 608e85f35c31bc8438f47f41b32a7c4b, type: 3}
+      propertyPath: m_Size.y
+      value: 0.23179936
+      objectReference: {fileID: 0}
+    - target: {fileID: 5235129113930472568, guid: 608e85f35c31bc8438f47f41b32a7c4b, type: 3}
+      propertyPath: m_Offset.y
+      value: -1.0875899
+      objectReference: {fileID: 0}
+    - target: {fileID: 5235129113930472568, guid: 608e85f35c31bc8438f47f41b32a7c4b, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.90625
+      objectReference: {fileID: 0}
+    - target: {fileID: 5235129113930472568, guid: 608e85f35c31bc8438f47f41b32a7c4b, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 2.15625
+      objectReference: {fileID: 0}
+    - target: {fileID: 6367989719644090941, guid: 608e85f35c31bc8438f47f41b32a7c4b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1857492207, guid: 3229a98e27d43fe47b6b5e442465d85e, type: 3}
     - target: {fileID: 8986564161767464335, guid: 608e85f35c31bc8438f47f41b32a7c4b, type: 3}
       propertyPath: m_GravityScale
       value: 5
