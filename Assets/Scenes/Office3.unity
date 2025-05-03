@@ -7964,25 +7964,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lines:
-  - "P: Ho\u015Fgeldin x, nas\u0131ls\u0131n?"
-  - "K: \u0130yiyim x bey sa\u011Folun, son g\xF6revde de her \u015Fey istedi\u011Fimiz
-    gibi gitti."
-  - 'P: Biliyorum, haberlerini anbean takip ediyordum zaten.'
+  - "Profes\xF6r: Ho\u015Fgeldin Locke, nas\u0131ls\u0131n?"
+  - "Locke: \u0130yiyim profes\xF6r sa\u011Folun, son g\xF6revde de her \u015Fey
+    istedi\u011Fimiz gibi gitti."
+  - "Profes\xF6r: Biliyorum, haberlerini anbean takip ediyordum zaten."
   - "\u0130nan bana, buraya ilk geldi\u011Fin zamanki o tela\u015Fl\u0131 halinden
     so\u011Fukkanl\u0131 bir g\xF6rev adam\u0131na d\xF6n\xFC\u015Ft\xFC\u011F\xFCn\xFC
     g\xF6rmek beni gururland\u0131r\u0131yor."
-  - "K: Evet, zamanla al\u0131\u015Ft\u0131m buradaki ko\u015Fullara. \xDCstelik
+  - "Locke: Evet, zamanla al\u0131\u015Ft\u0131m buradaki ko\u015Fullara. \xDCstelik
     insanlarla da \xE7ok iyi anla\u015F\u0131yorum."
   - "Sanki aile gibiler. Hi\xE7 sahip olamad\u0131\u011F\u0131m o aile..."
-  - "Ama bir \u015Fey dikkatimi \xE7ekti x bey."
-  - 'P: Nedir?'
-  - "K: Burada kime sorsam onlar da benim gibi ailesiz b\xFCy\xFCm\xFC\u015F insanlar.
-    \xDCstelik hepsi de bekar.."
+  - "Ama bir \u015Fey dikkatimi \xE7ekti profes\xF6r.."
+  - "Profes\xF6r: Nedir?"
+  - "Locke: Burada kime sorsam onlar da benim gibi ailesiz b\xFCy\xFCm\xFC\u015F
+    insanlar. Ve hepsi de bekar.."
   - "Sanki birileri Tekillik i\xE7in \xF6zellikle d\xFCnyan\u0131n en yaln\u0131z
     insanlar\u0131n\u0131 se\xE7mi\u015F gibi."
-  - "P: Ne \xF6nemi var ki yaln\u0131zl\u0131\u011F\u0131n? Ge\xE7mi\u015Fe gidip
-    zaman \xE7izgisinde yapt\u0131\u011F\u0131n her de\u011Fi\u015Fiklik evreni geri
-    d\xF6n\xFClemez \u015Fekilde de\u011Fi\u015Ftiriyor zaten."
+  - "Profes\xF6r: Ne \xF6nemi var ki yaln\u0131zl\u0131\u011F\u0131n? Ge\xE7mi\u015Fe
+    gidip zaman \xE7izgisinde yapt\u0131\u011F\u0131n her de\u011Fi\u015Fiklik evreni
+    geri d\xF6n\xFClemez \u015Fekilde de\u011Fi\u015Ftiriyor zaten."
   - "\xD6nledi\u011Fin sava\u015Flar cephelerin ard\u0131nda dolayl\u0131 yoldan
     kim bilir ka\xE7 ailenin kaderini de\u011Fi\u015Ftirdi, ka\xE7 ya\u015Fant\u0131y\u0131
     etkiledi bir d\xFC\u015F\xFCnsene..."
@@ -7990,39 +7990,43 @@ MonoBehaviour:
     oynaman\u0131n sonucunda art\u0131k farkl\u0131 insanlar olacaklard\u0131. Ailen
     sand\u0131\u011F\u0131n insanlar\u0131 yeni ger\xE7eklikte tan\u0131mayacakt\u0131n
     bile."
-  - "Bu y\xFCzden sizi de buraya geli\u015F amac\u0131n\u0131zdan ayr\u0131lmayacak
-    insanlar olarak se\xE7tik."
-  - "K: Nas\u0131l yani? Benim de bir yerlerde hi\xE7 tan\u0131mad\u0131\u011F\u0131m
-    bir ailem olabilir mi yani?"
-  - "P: Bunu asla bilemeyiz. Bilsen bile Tekillik'in eli bir g\xFCn zaman\u0131 de\u011Fi\u015Ftirir
-    ve hi\xE7 ya\u015Fanmam\u0131\u015F gibi silinir her \u015Fey."
+  - "Bu y\xFCzden sizi de sadece buraya geli\u015F amac\u0131na hizmet edecek yaln\u0131z
+    kurtlar olarak se\xE7tik."
+  - "Locke: Nas\u0131l yani? Benim de bir yerlerde hi\xE7 tan\u0131mad\u0131\u011F\u0131m
+    bir ailem olabilir mi?"
+  - "Profes\xF6r: Bunu asla bilemeyiz. Bilsen bile Tekillik'in eli bir g\xFCn zaman\u0131
+    de\u011Fi\u015Ftirir ve hi\xE7 ya\u015Fanmam\u0131\u015F gibi silinir her \u015Fey."
   - "Burada \xF6nemli olan tek mesele insan uygarl\u0131\u011F\u0131n\u0131n hep
     ileri gitmesi."
   - "Ve bunun i\xE7in sana son ve en \xF6nemli olan bu g\xF6rev d\xFC\u015F\xFCyor.
     Can kula\u011F\u0131yla dinle beni."
-  - "K: Son mu? Ne demek \u015Fimdi bu, bana ihtiya\xE7 kalmad\u0131 m\u0131 burada?"
-  - "P: Sana hep ihtiya\xE7 olacak x. Bazen bu halin, bazen ba\u015Fka bir halin."
+  - "Locke: Son mu? Ne demek \u015Fimdi bu, bana ihtiya\xE7 kalmad\u0131 m\u0131
+    burada?"
+  - "Profes\xF6r: Sana hep ihtiya\xE7 olacak Locke. Bazen bu halin, bazen ba\u015Fka
+    bir halin."
   - "Ger\xE7ek \u015Fu ki, Arf teoremi bulunup Tekillik kuruldu\u011Funda asl\u0131nda
     gerekli bilgi ve teknoloji hen\xFCz elimizde yoktu."
   - "As\u0131l can al\u0131c\u0131 k\u0131s\u0131m olan Kassad'\u0131n e\u015Fik
     sabitinin bulunmas\u0131na daha 350 y\u0131l vard\u0131."
-  - "Ve s\u0131k\u0131nt\u0131 \u015Fu ki, Zaman i\xE7inde tekrarlanan d\xF6ng\xFClerde
+  - "Ve s\u0131k\u0131nt\u0131 \u015Fu ki, zaman i\xE7inde tekrarlanan d\xF6ng\xFClerde
     bilgi entropisi sabitlenirse, d\u0131\u015Fsal m\xFCdahale olmadan k\u0131r\u0131l\u0131m
     ya\u015Fanamaz."
-  - "K: Ama Kassad'\u0131n sabiti zaman\u0131n d\u0131\u015F\u0131na \xE7\u0131kman\u0131n
-    tek anahtar\u0131? Bu bilinmeden tekillik nas\u0131l m\xFCmk\xFCn oldu?"
-  - "P: Bir d\xF6ng\xFCn\xFCn tamamlanmas\u0131yla, x. \u015Eimdi bu son g\xF6revinde
-    sana verece\u011Fim belgeleri bir profes\xF6re vereceksin. Bu bilgiler Tekillik'in
+  - "Locke: Evet ama Kassad'\u0131n sabiti zaman\u0131n d\u0131\u015F\u0131na \xE7\u0131kman\u0131n
+    tek anahtar\u0131ysa bu bilinmeden Tekillik nas\u0131l m\xFCmk\xFCn oldu?"
+  - "Profes\xF6r: Bir d\xF6ng\xFCn\xFCn tamamlanmas\u0131yla, Locke. \u015Eimdi bu
+    son g\xF6revinde sana verece\u011Fim belgeleri bir profes\xF6re vereceksin. \xC7ok
+    iyi tan\u0131d\u0131\u011F\u0131n bir profes\xF6re... Bu bilgiler Tekillik'in
     bizim evrenimizde tekrar kurulmas\u0131n\u0131 m\xFCmk\xFCn k\u0131lacak."
-  - "Bu bittikten sonra art\u0131k bizim \xFCst\xFCm\xFCze d\xFC\u015Fenler bitiyor, 
+  - "Bu bittikten sonra art\u0131k bizim \xFCst\xFCm\xFCze d\xFC\u015Fenler bitiyor,
     emekli oluyoruz."
-  - "K: Zaman\u0131 gelince \xF6\u011Freneceksin dedi\u011Fin \u015Fey buydu yani
-    demek."
+  - "Locke: Zaman\u0131 gelince \xF6\u011Freneceksin dedi\u011Fin \u015Fey buydu
+    yani demek."
   - "D\xF6ng\xFC benimle tamamlan\u0131yormu\u015F me\u011Fer. Her \u015Feyin ard\u0131ndaki
     s\u0131r perdesi art\u0131k araland\u0131."
-  - "P: En g\xFCvenilir ajan\u0131m\u0131z sensin, x. Ba\u015Faraca\u011F\u0131ndan
-    \u015F\xFCphem yok ama ne olur dikkatli ol."
-  - 'K: Peki, x bey.'
+  - "Profes\xF6r: Bak Locke, en g\xFCvenilir ajan\u0131m\u0131z sensin. Ba\u015Faraca\u011F\u0131ndan
+    \u015F\xFCphem yok ama ne olur dikkatli ol. Bu Tekillik i\xE7in her \u015Fey
+    demek."
+  - "Locke: Peki, profes\xF6r..."
   dm: {fileID: 1408824319}
   canvas: {fileID: 1408824318}
 --- !u!1 &1004951032
