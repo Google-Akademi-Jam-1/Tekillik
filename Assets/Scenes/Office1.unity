@@ -374,6 +374,7 @@ MonoBehaviour:
   lines:
   - "\"SPACE bas SPACE bas SPACE basmayan...\" (Devam\u0131 Tekillik kay\u0131tlar\u0131nda
     yer alm\u0131yor.)"
+  talker: 
   dm: {fileID: 1408824319}
   canvas: {fileID: 1408824318}
   tmp: {fileID: 1747245183}
@@ -1225,6 +1226,7 @@ MonoBehaviour:
   - "Locke: Anla\u015F\u0131ld\u0131. Hangi te\xE7hizatlarla gidece\u011Fim?"
   - "Profes\xF6r: Bu g\xF6revin i\xE7in sana bir plazma silah\u0131 verece\u011Fiz."
   - "Bol \u015Fans..."
+  talker: scientist
   dm: {fileID: 1408824319}
   canvas: {fileID: 1408824318}
   tmp: {fileID: 1747245183}
@@ -32675,6 +32677,7 @@ MonoBehaviour:
   lines:
   - "\"ve insanl\u0131k y\xF6n tu\u015Flar\u0131n\u0131 b\u0131rak\u0131p A ve D
     ile hareket etmeye ba\u015Flad\u0131\""
+  talker: 
   dm: {fileID: 1408824319}
   canvas: {fileID: 1408824318}
   tmp: {fileID: 1747245183}
@@ -32726,6 +32729,7 @@ MonoBehaviour:
   lines:
   - "\"Barut icat oldu mertlik bozuldu. Bu y\xFCzden MOUSE SOL TIK ile plazma topu
     kullan\""
+  talker: 
   dm: {fileID: 1408824319}
   canvas: {fileID: 1408824318}
   tmp: {fileID: 1747245183}

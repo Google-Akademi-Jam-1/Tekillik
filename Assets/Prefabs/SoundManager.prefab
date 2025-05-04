@@ -46,15 +46,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SFX:
-  - name: scientistTalking
+  - name: scientist
     clip: {fileID: 8300000, guid: 960a4e549d8f95c4099cbd371bc551b5, type: 3}
     volume: 0.333
     pitch: 1
-  - name: commanderTalking
+  - name: commander
     clip: {fileID: 8300000, guid: 4a98da36c6eb05d4589ceb5499c8222c, type: 3}
     volume: 0.273
     pitch: 1
-  - name: bossTalking
+  - name: boss
     clip: {fileID: 8300000, guid: c8d351a0bae391d4a8667cc7f9dfe767, type: 3}
     volume: 0.273
     pitch: 1
@@ -64,6 +64,18 @@ MonoBehaviour:
     pitch: 1
   - name: soldierShoot2
     clip: {fileID: 8300000, guid: 15ccb21779872b74e964fd69c31d2f4d, type: 3}
+    volume: 0.273
+    pitch: 1
+  - name: player
+    clip: {fileID: 8300000, guid: db27e89ad02b1bf47837f8c052ed923b, type: 3}
+    volume: 0.273
+    pitch: 1
+  - name: playerDeath
+    clip: {fileID: 8300000, guid: ce9e768b87f4e4f4493e2037f52356ea, type: 3}
+    volume: 0.273
+    pitch: 1
+  - name: explosion
+    clip: {fileID: 8300000, guid: 71d5a5ecb9261b2499a7ef1d88c4ac1d, type: 3}
     volume: 0.273
     pitch: 1
 --- !u!82 &3834979848453560778

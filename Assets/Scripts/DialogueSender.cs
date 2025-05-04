@@ -11,6 +11,9 @@ public class DialogueSender : MonoBehaviour
     string[] lines;
 
     [SerializeField]
+    string talker;
+
+    [SerializeField]
     DialogueManager dm;
 
     [SerializeField]
@@ -25,6 +28,7 @@ public class DialogueSender : MonoBehaviour
         {
             dm.lines = lines;
             canvas.gameObject.SetActive(true);
+            SFXManager.instance.PlaySoundEffect(talker);
         }
     }
 
