@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1034383964881610701}
   - component: {fileID: 6636637176115842201}
   - component: {fileID: 8436800443881446127}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Mission1Enemy
   m_TagString: EnemySoldier
   m_Icon: {fileID: 0}
@@ -237,7 +237,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6035634648796391177}
   - component: {fileID: 6923561555238537801}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Bullet Spawn Point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
