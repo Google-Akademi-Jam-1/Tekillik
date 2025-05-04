@@ -68,6 +68,7 @@ public class EnemySoldierController : MonoBehaviour
 
     public void Detected()
     {
+        Debug.Log("Inside detected");
         isShooting = true;
         StartCoroutine(DetectedCoroutine());
     }

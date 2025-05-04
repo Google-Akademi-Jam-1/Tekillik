@@ -61,6 +61,14 @@ public class PlayerControl : MonoBehaviour
         HandleControls();
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("EnemyBullet"))
+        {
+            Die();
+        }
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (isDead) { return; }
@@ -129,8 +137,8 @@ public class PlayerControl : MonoBehaviour
     {
         bullet.transform.position = powerSource.transform.position;
         Transform newBullet = Instantiate(bullet);
-        bulletRB = newBullet.GetComponent<Rigidbody2D>();
-        bulletRB.velocity = new Vector2(bulletSpeed * transform.localScale.x, 0.0f);
+        BulletBehaviour bulletBehave = newBullet.GetComponent<BulletBehaviour>();
+        bulletBehave.direction = new Vector2(transform.localScale.x, 0f);
     }
 
     IEnumerator WaitDie()

@@ -696,6 +696,7 @@ MonoBehaviour:
   - "Enrico: Sana ne desem bo\u015F."
   - "Al\xE7ak bir tetik\xE7iden fazlas\u0131 de\u011Filsin. Ama g\xFCn\xFCn birinde
     beni anlayacaks\u0131n..."
+  talker: 
   dm: {fileID: 609018372}
   canvas: {fileID: 192037199}
   tmp: {fileID: 1838910900}
@@ -21482,14 +21483,6 @@ PrefabInstance:
     - target: {fileID: 6839196531164686202, guid: ccee70bd498fe834b8d1fca6b327b400, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9049330663066900449, guid: ccee70bd498fe834b8d1fca6b327b400, type: 3}
-      propertyPath: m_Layer
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 9049330663066900449, guid: ccee70bd498fe834b8d1fca6b327b400, type: 3}
-      propertyPath: m_TagString
-      value: light
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

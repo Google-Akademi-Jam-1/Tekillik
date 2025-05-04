@@ -6,6 +6,8 @@ TagManager:
   tags:
   - light
   - EnemyBullet
+  - EnemySoldier
+  - PlayerBullet
   layers:
   - Default
   - TransparentFX
@@ -18,7 +20,7 @@ TagManager:
   - playerBullet
   - player
   - background
-  - 
+  - enemy
   - 
   - 
   - 

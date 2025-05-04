@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6419162815045971764}
   m_Layer: 8
   m_Name: Bullet
-  m_TagString: Untagged
+  m_TagString: PlayerBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 4016629749498320446}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.9008837, y: 4.308825, z: 0}
+  m_LocalPosition: {x: 41.97436, y: 0.50594866, z: 0}
   m_LocalScale: {x: 0.39189, y: 0.39189, z: 0.39189}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -143,7 +143,7 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -161,3 +161,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d27ecb1db0ebb724db84d8dca007e74f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 5
+  lifeTime: 3
+  direction: {x: 1, y: 0}

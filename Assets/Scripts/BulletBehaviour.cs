@@ -17,5 +17,10 @@ public class BulletBehaviour : MonoBehaviour
 
         Destroy(gameObject, lifeTime); // Süre dolunca mermiyi yok et
     }
-    
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Destroy(gameObject);
+    }
+
 }

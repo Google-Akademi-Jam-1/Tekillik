@@ -52,9 +52,7 @@ public class MissionOneEnemy : MonoBehaviour
     {
         isPlayerSeen = visionRange.IsTouchingLayers(LayerMask.GetMask("player"));
         fireTimer -= Time.deltaTime;
-        Die();
         Move();
-        
     }
 
     private void Move()
@@ -93,13 +91,17 @@ public class MissionOneEnemy : MonoBehaviour
         }
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("PlayerBullet"))
+        {
+            Die();
+        }
+    }
+
     void Die()
     {
-        shouldDie = enemyCollider.IsTouchingLayers(LayerMask.GetMask("playerBullet"));
-        if (shouldDie)
-        {
-            StartCoroutine(WaitDie());
-        }
+        StartCoroutine(WaitDie());
     }
 
     void Shoot(){
