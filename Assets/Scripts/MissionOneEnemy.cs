@@ -17,15 +17,14 @@ public class MissionOneEnemy : MonoBehaviour
     [SerializeField]
     float tooCloseTreshold;
 
-    [SerializeField]
-    float visionDistance;
-
     CircleCollider2D visionRange;
+    CapsuleCollider2D enemyCollider;
     Rigidbody2D rb;
 
     bool isPlayerSeen;
     bool isInPosition;
     bool isTooClose;
+    bool shouldDie;
 
     Vector3 startPosition;
 
@@ -33,18 +32,21 @@ public class MissionOneEnemy : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         visionRange = GetComponent<CircleCollider2D>();
+        enemyCollider = GetComponent<CapsuleCollider2D>();
+
         startPosition = transform.position;
     }
 
     private void Update()
     {
         isPlayerSeen = visionRange.IsTouchingLayers(LayerMask.GetMask("player"));
-
+        Die();
         Move();
     }
 
     private void Move()
     {
+        if (shouldDie) { return; }
         if (isPlayerSeen)
         {
             Vector3 moveVec = player.position - transform.position;
@@ -60,6 +62,21 @@ public class MissionOneEnemy : MonoBehaviour
             Vector3 normalizedMoveVec = Vector3.Normalize(moveVec);
             rb.velocity = new Vector3(normalizedMoveVec.x * speed, 0f, 0f);
         }
+    }
+
+    void Die()
+    {
+        shouldDie = enemyCollider.IsTouchingLayers(LayerMask.GetMask("playerBullet"));
+        if (shouldDie)
+        {
+            StartCoroutine(WaitDie());
+        }
+    }
+
+    IEnumerator WaitDie()
+    {
+        yield return new WaitForSeconds(1);
+        Destroy(this.gameObject);
     }
 
 }

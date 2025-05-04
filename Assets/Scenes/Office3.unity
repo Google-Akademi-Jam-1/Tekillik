@@ -7996,7 +7996,7 @@ MonoBehaviour:
   - "Locke: Peki, profes\xF6r..."
   dm: {fileID: 1408824319}
   canvas: {fileID: 1408824318}
-  tmp: {fileID: 0}
+  tmp: {fileID: 1408824320}
 --- !u!1 &1004951032
 GameObject:
   m_ObjectHideFlags: 0
@@ -32501,6 +32501,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ac9a6b445a7d8ff4ea21387c33afe3dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1408824320 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6439098837290148627, guid: 1d43080e1b4a5e04581929d0055253c5, type: 3}
+  m_PrefabInstance: {fileID: 1408824317}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1474588862
