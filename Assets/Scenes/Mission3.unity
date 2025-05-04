@@ -344,8 +344,8 @@ Transform:
   m_GameObject: {fileID: 905431372}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 23.66, y: -1.89, z: 1}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalPosition: {x: 23.64, y: -1.74, z: 1}
+  m_LocalScale: {x: 0.46, y: 0.56, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -366,6 +366,7 @@ MonoBehaviour:
   - "ben bir bilim adam\u0131y\u0131m ve zaman\u0131 kontrol etmek \xFCzerine karanl\u0131k
     d\xFCrt\xFClerim var hihihi."
   - huhuhuhu
+  talker: 
   dm: {fileID: 2062189327}
   canvas: {fileID: 2062189326}
   tmp: {fileID: 0}
@@ -437,6 +438,7 @@ MonoBehaviour:
   lines:
   - "kendime d\xFC\u015F\xFCnceler"
   - "kendime d\xFC\u015F\xFCnceler"
+  talker: 
   dm: {fileID: 2062189327}
   canvas: {fileID: 2062189326}
   tmp: {fileID: 1973114657}
