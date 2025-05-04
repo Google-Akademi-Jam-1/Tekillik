@@ -6,9 +6,10 @@ public class SFXManager : MonoBehaviour
 {
     public static SFXManager instance;
 
-    AudioSource source;
     [SerializeField]
     Sound[] SFX;
+
+    private List<AudioSource> audioSources = new List<AudioSource>();
 
     private void Awake()
     {
@@ -20,8 +21,8 @@ public class SFXManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
-
-        source = GetComponent<AudioSource>();
+        AudioSource firstSource = gameObject.AddComponent<AudioSource>();
+        audioSources.Add(firstSource);
     }
 
     public void PlaySoundEffect(string name)
@@ -38,11 +39,26 @@ public class SFXManager : MonoBehaviour
 
         if (soundEffect2Play != null)
         {
+            AudioSource source = GetAvailableAudioSource();
+
             source.clip = soundEffect2Play.clip;
             source.pitch = soundEffect2Play.pitch;
             source.volume = soundEffect2Play.volume;
             source.Play();
         }
+    }
+    private AudioSource GetAvailableAudioSource()
+    {
+        // Boþta bir kaynak varsa onu döndür
+        foreach (var src in audioSources)
+        {
+            if (!src.isPlaying)
+                return src;
+        }
 
+        // Hepsi doluysa yeni bir tane oluþtur
+        AudioSource newSource = gameObject.AddComponent<AudioSource>();
+        audioSources.Add(newSource);
+        return newSource;
     }
 }

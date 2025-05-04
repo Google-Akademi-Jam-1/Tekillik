@@ -131,6 +131,7 @@ public class PlayerControl : MonoBehaviour
     {
         isDead = true;
         anim.SetTrigger("die");
+        SFXManager.instance.PlaySoundEffect("maleDeath");
         StartCoroutine(WaitDie());
     }
     void Shoot()

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 
@@ -16,7 +17,6 @@ public class EnemySoldierController : MonoBehaviour
 
     private int direction = 1; // 1 = sað, -1 = sol
     private bool isWaiting = false; // Bekleme kontrolü
-    bool isShooting = false;
 
     private void Awake()
     {
@@ -33,7 +33,7 @@ public class EnemySoldierController : MonoBehaviour
 
     private void Move()
     {
-        if (isShooting) { return; }
+        if (isWaiting) return;
         animator.SetBool("isWalking", true);
         rb.velocity = new Vector2(moveSpeed * direction, rb.velocity.y);
 
@@ -51,7 +51,7 @@ public class EnemySoldierController : MonoBehaviour
     private IEnumerator WaitAndTurn(int newDirection)
     {
         animator.SetBool("isWalking", false);
-        isWaiting = true;
+        isWaiting = true; //bunlar boþuna duruyor çünkü coroutine içindeyiz, bitince direkt isWaiting true oluyor zaten
         rb.velocity = Vector2.zero; // Hareketi durdur
         yield return new WaitForSeconds(2f); // 2 saniye bekle
         direction = newDirection;
@@ -68,8 +68,7 @@ public class EnemySoldierController : MonoBehaviour
 
     public void Detected()
     {
-        Debug.Log("Inside detected");
-        isShooting = true;
+        StopAllCoroutines(); //Dönüþler durdu
         StartCoroutine(DetectedCoroutine());
     }
 
@@ -78,22 +77,19 @@ public class EnemySoldierController : MonoBehaviour
         isWaiting = true;
         rb.velocity = Vector2.zero;
         animator.SetBool("isWalking", false);
-        Debug.Log("Detected");
         int animNum = Random.Range(0, 2);
         if (animNum == 0)
         {
             SFXManager.instance.PlaySoundEffect("soldierShoot1");
-            animator.Play("soldierShoot1", 0, 0f);
+
             animator.SetTrigger("shoot1");
         }
         else
         {
             SFXManager.instance.PlaySoundEffect("soldierShoot2");
             animator.SetTrigger("shoot2");
-            animator.Play("soldierShoot2", 0, 0f);
         }
         yield return new WaitForSeconds(1.2f);
-        isShooting = false;
         isWaiting = false;
     }
 

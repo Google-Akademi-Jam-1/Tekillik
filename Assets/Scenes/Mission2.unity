@@ -1384,58 +1384,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3605259929602878735, guid: dbae56523a015934aadaa1b473ec18ba, type: 3}
-      propertyPath: SFX.Array.size
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 3605259929602878735, guid: dbae56523a015934aadaa1b473ec18ba, type: 3}
-      propertyPath: SFX.Array.data[5].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 71d5a5ecb9261b2499a7ef1d88c4ac1d, type: 3}
-    - target: {fileID: 3605259929602878735, guid: dbae56523a015934aadaa1b473ec18ba, type: 3}
-      propertyPath: SFX.Array.data[5].name
-      value: explosion
-      objectReference: {fileID: 0}
-    - target: {fileID: 3605259929602878735, guid: dbae56523a015934aadaa1b473ec18ba, type: 3}
-      propertyPath: SFX.Array.data[6].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: db27e89ad02b1bf47837f8c052ed923b, type: 3}
-    - target: {fileID: 3605259929602878735, guid: dbae56523a015934aadaa1b473ec18ba, type: 3}
-      propertyPath: SFX.Array.data[6].name
-      value: maleGrunt
-      objectReference: {fileID: 0}
-    - target: {fileID: 3605259929602878735, guid: dbae56523a015934aadaa1b473ec18ba, type: 3}
-      propertyPath: SFX.Array.data[7].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: ce9e768b87f4e4f4493e2037f52356ea, type: 3}
-    - target: {fileID: 3605259929602878735, guid: dbae56523a015934aadaa1b473ec18ba, type: 3}
-      propertyPath: SFX.Array.data[7].name
-      value: maleDeath
-      objectReference: {fileID: 0}
-    - target: {fileID: 3605259929602878735, guid: dbae56523a015934aadaa1b473ec18ba, type: 3}
-      propertyPath: SFX.Array.data[5].pitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3605259929602878735, guid: dbae56523a015934aadaa1b473ec18ba, type: 3}
-      propertyPath: SFX.Array.data[6].pitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3605259929602878735, guid: dbae56523a015934aadaa1b473ec18ba, type: 3}
-      propertyPath: SFX.Array.data[7].pitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3605259929602878735, guid: dbae56523a015934aadaa1b473ec18ba, type: 3}
-      propertyPath: SFX.Array.data[5].volume
-      value: 0.273
-      objectReference: {fileID: 0}
-    - target: {fileID: 3605259929602878735, guid: dbae56523a015934aadaa1b473ec18ba, type: 3}
-      propertyPath: SFX.Array.data[6].volume
-      value: 0.273
-      objectReference: {fileID: 0}
-    - target: {fileID: 3605259929602878735, guid: dbae56523a015934aadaa1b473ec18ba, type: 3}
-      propertyPath: SFX.Array.data[7].volume
-      value: 0.273
-      objectReference: {fileID: 0}
     - target: {fileID: 5658921451053177137, guid: dbae56523a015934aadaa1b473ec18ba, type: 3}
       propertyPath: m_Name
       value: SoundManager
