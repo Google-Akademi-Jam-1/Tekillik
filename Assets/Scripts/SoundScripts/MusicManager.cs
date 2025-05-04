@@ -27,6 +27,14 @@ public class MusicManager : MonoBehaviour
         {
             PlayMusic("level2 music");
         }
+        else if (sceneName == "Mission3")
+        {
+            PlayMusic("level3");
+        }
+        else if(sceneName == "Office1" || sceneName == "Office2" || sceneName == "Office3")
+        {
+            PlayMusic("office music");
+        }
     }
 
     public void PlayMusic(string name)

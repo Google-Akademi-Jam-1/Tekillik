@@ -274,6 +274,14 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 15cc11fd05c500e46be10758bb82070f, type: 3}
     volume: 0.303
     pitch: 1
+  - name: level3
+    clip: {fileID: 8300000, guid: 4c6d6422d358812478007e757c7cf59e, type: 3}
+    volume: 0.303
+    pitch: 1
+  - name: office music
+    clip: {fileID: 8300000, guid: 232630b26aeb6de49a572d7206aa7130, type: 3}
+    volume: 0.303
+    pitch: 1
 --- !u!82 &6730175966542007728
 AudioSource:
   m_ObjectHideFlags: 0
