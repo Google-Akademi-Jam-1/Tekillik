@@ -232,7 +232,7 @@ GameObject:
   - component: {fileID: 1543421849584666176}
   - component: {fileID: 8873510282990617100}
   - component: {fileID: 7486660825688493280}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: light
   m_TagString: light
   m_Icon: {fileID: 0}

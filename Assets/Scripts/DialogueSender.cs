@@ -16,6 +16,9 @@ public class DialogueSender : MonoBehaviour
     [SerializeField]
     Canvas canvas;
 
+    [SerializeField]
+    TextMeshProUGUI tmp;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
@@ -32,6 +35,8 @@ public class DialogueSender : MonoBehaviour
         {
             if (canvas.gameObject.activeSelf)
             {
+                dm.isDialogueStarted = false;
+                tmp.text = string.Empty;
                 canvas.gameObject.SetActive(false);
             }
         }

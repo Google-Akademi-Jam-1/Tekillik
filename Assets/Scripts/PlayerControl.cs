@@ -16,10 +16,20 @@ public class PlayerControl : MonoBehaviour
     [SerializeField]
     float waitTimeBeforeRestarting;
 
+    [SerializeField]
+    Transform bullet;
+
+    [SerializeField]
+    Transform powerSource;
+
+    [SerializeField]
+    float bulletSpeed;
+
     Rigidbody2D rb;
     BoxCollider2D feetCollider;
     CapsuleCollider2D charCollider;
     Animator anim;
+    Rigidbody2D bulletRB;
 
     bool onGround = true;
     bool isDead = false;
@@ -31,16 +41,23 @@ public class PlayerControl : MonoBehaviour
         feetCollider = GetComponent<BoxCollider2D>();
         anim = GetComponent<Animator>();
         charCollider = GetComponent<CapsuleCollider2D>();
+
+        // NOT SURE THIS WILL WORK
     }
 
     private void Update()
     {
         if (isDead) { return; }
-            HandleControls();
+        if (charCollider.IsTouchingLayers(LayerMask.GetMask("enemyBullet")))
+        {
+            Die();
+        }
+        HandleControls();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (isDead) { return; }
         bool isFalling = (rb.velocity.y < 0);
         Debug.Log("Inside on trigger and is Falling is:" + isFalling);
         
@@ -82,6 +99,10 @@ public class PlayerControl : MonoBehaviour
         {
             Jump();
         }
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            Shoot();
+        }
     }
     void Jump()
     {
@@ -102,8 +123,16 @@ public class PlayerControl : MonoBehaviour
 
     void Die()
     {
-        anim.SetBool("isDead", true);
-        //StartCoroutine(WaitDie());
+        isDead = true;
+        anim.SetTrigger("die");
+        StartCoroutine(WaitDie());
+    }
+    void Shoot()
+    {
+        bullet.transform.position = powerSource.transform.position;
+        Transform newBullet = Instantiate(bullet);
+        bulletRB = newBullet.GetComponent<Rigidbody2D>();
+        bulletRB.velocity = new Vector2(bulletSpeed, 0.0f);
     }
 
     IEnumerator WaitDie()

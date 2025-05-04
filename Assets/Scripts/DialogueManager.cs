@@ -17,7 +17,7 @@ public class DialogueManager : MonoBehaviour
     [SerializeField]
     Canvas canvas;
 
-    bool isDialogueStarted = false;
+    public bool isDialogueStarted = false;
     bool writingLine = false;
     
     private void Start()
