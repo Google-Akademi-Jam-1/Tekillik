@@ -16,6 +16,7 @@ public class EnemySoldierController : MonoBehaviour
 
     private int direction = 1; // 1 = sað, -1 = sol
     private bool isWaiting = false; // Bekleme kontrolü
+    bool isShooting = false;
 
     private void Awake()
     {
@@ -32,6 +33,7 @@ public class EnemySoldierController : MonoBehaviour
 
     private void Move()
     {
+        if (isShooting) { return; }
         animator.SetBool("isWalking", true);
         rb.velocity = new Vector2(moveSpeed * direction, rb.velocity.y);
 
@@ -66,6 +68,7 @@ public class EnemySoldierController : MonoBehaviour
 
     public void Detected()
     {
+        isShooting = true;
         StartCoroutine(DetectedCoroutine());
     }
 
@@ -89,7 +92,7 @@ public class EnemySoldierController : MonoBehaviour
             animator.Play("soldierShoot2", 0, 0f);
         }
         yield return new WaitForSeconds(1.2f);
-
+        isShooting = false;
         isWaiting = false;
     }
 
