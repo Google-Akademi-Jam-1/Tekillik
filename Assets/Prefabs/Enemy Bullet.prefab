@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6422202059645553586}
   - component: {fileID: 7663714355919008940}
   - component: {fileID: 6419162815045971764}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: Enemy Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -161,3 +161,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d27ecb1db0ebb724db84d8dca007e74f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 15
+  lifeTime: 5
+  direction: {x: 1, y: 0}

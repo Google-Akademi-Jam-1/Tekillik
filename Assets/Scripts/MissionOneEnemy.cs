@@ -103,11 +103,16 @@ public class MissionOneEnemy : MonoBehaviour
     }
 
     void Shoot(){
-        if(shouldDie) return;
+       if(shouldDie) return;
 
         if(fireTimer <= 0f){
-            Instantiate(enemyBullet, bulletSpawnPoint.position, Quaternion.identity);
-            fireTimer = fireCooldown;
+            GameObject bullet = Instantiate(enemyBullet, bulletSpawnPoint.position, Quaternion.identity);
+
+        float directionX = GetComponent<SpriteRenderer>().flipX ? -1f : 1f;
+
+        bullet.GetComponent<BulletBehaviour>().direction = new Vector2(directionX, 0f);
+
+        fireTimer = fireCooldown;
         }
     }
 
