@@ -132,7 +132,7 @@ public class PlayerControl : MonoBehaviour
         bullet.transform.position = powerSource.transform.position;
         Transform newBullet = Instantiate(bullet);
         bulletRB = newBullet.GetComponent<Rigidbody2D>();
-        bulletRB.velocity = new Vector2(bulletSpeed, 0.0f);
+        bulletRB.velocity = new Vector2(bulletSpeed * transform.localScale.x, 0.0f);
     }
 
     IEnumerator WaitDie()
