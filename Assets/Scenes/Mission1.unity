@@ -47243,6 +47243,10 @@ PrefabInstance:
       propertyPath: jumpForce
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 2970361954505292208, guid: 608e85f35c31bc8438f47f41b32a7c4b, type: 3}
+      propertyPath: bulletSpeed
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 5235129113930472568, guid: 608e85f35c31bc8438f47f41b32a7c4b, type: 3}
       propertyPath: m_Size.x
       value: 0.88558686
