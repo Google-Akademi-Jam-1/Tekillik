@@ -64,4 +64,19 @@ public class MissionOneEnemy : MonoBehaviour
         }
     }
 
+    void Die()
+    {
+        shouldDie = enemyCollider.IsTouchingLayers(LayerMask.GetMask("playerBullet"));
+        if (shouldDie)
+        {
+            StartCoroutine(WaitDie());
+        }
+    }
+
+    IEnumerator WaitDie()
+    {
+        yield return new WaitForSeconds(1);
+        Destroy(this.gameObject);
+    }
+
 }
