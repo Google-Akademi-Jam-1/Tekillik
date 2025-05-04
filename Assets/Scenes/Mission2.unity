@@ -772,6 +772,7 @@ GameObject:
   - component: {fileID: 745675789}
   - component: {fileID: 745675790}
   - component: {fileID: 745675791}
+  - component: {fileID: 745675792}
   m_Layer: 0
   m_Name: proffesor
   m_TagString: Untagged
@@ -811,7 +812,7 @@ MonoBehaviour:
     federaller."
   - "Locke: Sand\u0131\u011F\u0131n gibi de\u011Fil. En az\u0131ndan \u015Fu an bilmeye
     hakk\u0131n var."
-  - "\u0130nsanl\u0131\u011F\u0131 yok etmemek i\xE7in gelecekten g\xF6nderildim."
+  - "\u0130nsanl\u0131\u011F\u0131 yok etmemen i\xE7in gelecekten g\xF6nderildim."
   - "Enrico: Gelecek ha... Demek art\u0131k zamanla da oynuyoruz."
   - "Peki ya sen bu bulu\u015Fu yaln\u0131zca benim eserim mi san\u0131yorsun?"
   - "\u015Eu geldi\u011Fin hale bak. Beni \xF6ld\xFCrmenin bir \u015Feyler de\u011Fi\u015Ftirece\u011Fini
@@ -876,6 +877,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!70 &745675792
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 745675788}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 37.04, y: 9.27}
+  m_Direction: 0
 --- !u!1 &1234510058
 GameObject:
   m_ObjectHideFlags: 0
