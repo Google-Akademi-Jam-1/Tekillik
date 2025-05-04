@@ -1226,7 +1226,7 @@ MonoBehaviour:
   - "Locke: Anla\u015F\u0131ld\u0131. Hangi te\xE7hizatlarla gidece\u011Fim?"
   - "Profes\xF6r: Bu g\xF6revin i\xE7in sana bir plazma silah\u0131 verece\u011Fiz."
   - "Bol \u015Fans..."
-  talker: scientist
+  talker: boss
   dm: {fileID: 1408824319}
   canvas: {fileID: 1408824318}
   tmp: {fileID: 1747245183}
