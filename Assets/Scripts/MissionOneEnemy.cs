@@ -16,6 +16,16 @@ public class MissionOneEnemy : MonoBehaviour
 
     [SerializeField]
     float tooCloseTreshold;
+    
+    [SerializeField] 
+    GameObject enemyBullet;
+
+    [SerializeField] Transform 
+    bulletSpawnPoint;
+    [SerializeField] 
+    float fireCooldown = 1f;
+    float fireTimer = 0f;
+
 
     CircleCollider2D visionRange;
     CapsuleCollider2D enemyCollider;
@@ -27,12 +37,13 @@ public class MissionOneEnemy : MonoBehaviour
     bool shouldDie;
 
     Vector3 startPosition;
-
+    Animator animator;
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         visionRange = GetComponent<CircleCollider2D>();
         enemyCollider = GetComponent<CapsuleCollider2D>();
+        animator = GetComponent<Animator>();
 
         startPosition = transform.position;
     }
@@ -40,8 +51,10 @@ public class MissionOneEnemy : MonoBehaviour
     private void Update()
     {
         isPlayerSeen = visionRange.IsTouchingLayers(LayerMask.GetMask("player"));
+        fireTimer -= Time.deltaTime;
         Die();
         Move();
+        
     }
 
     private void Move()
@@ -73,6 +86,11 @@ public class MissionOneEnemy : MonoBehaviour
                 GetComponent<SpriteRenderer>().flipX = true;
             rb.velocity = new Vector3(normalizedMoveVec.x * speed, 0f, 0f);
         }
+        animator.SetBool("isWalking", Mathf.Abs(rb.velocity.x) > 0.1f);
+
+        if (isTooClose && isPlayerSeen){
+            Shoot();
+        }
     }
 
     void Die()
@@ -81,6 +99,15 @@ public class MissionOneEnemy : MonoBehaviour
         if (shouldDie)
         {
             StartCoroutine(WaitDie());
+        }
+    }
+
+    void Shoot(){
+        if(shouldDie) return;
+
+        if(fireTimer <= 0f){
+            Instantiate(enemyBullet, bulletSpawnPoint.position, Quaternion.identity);
+            fireTimer = fireCooldown;
         }
     }
 
