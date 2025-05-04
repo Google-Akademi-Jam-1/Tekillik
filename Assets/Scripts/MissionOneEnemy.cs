@@ -52,6 +52,12 @@ public class MissionOneEnemy : MonoBehaviour
             Vector3 moveVec = player.position - transform.position;
             Vector3 normalizedMoveVec = Vector3.Normalize(moveVec);
             isTooClose = (Mathf.Abs(player.position.x - transform.position.x) <= tooCloseTreshold);
+            // Sprite'ı sağa/sola döndür
+            if (normalizedMoveVec.x > 0)
+                GetComponent<SpriteRenderer>().flipX = false;
+            else if (normalizedMoveVec.x < 0)
+                GetComponent<SpriteRenderer>().flipX = true;
+            
             if (!isTooClose)
                 rb.velocity = new Vector3(normalizedMoveVec.x * speedMultiplier * speed, 0f, 0f);
 
@@ -60,6 +66,11 @@ public class MissionOneEnemy : MonoBehaviour
         {
             Vector3 moveVec = startPosition - transform.position;
             Vector3 normalizedMoveVec = Vector3.Normalize(moveVec);
+            // Sprite'ı sağa/sola döndür
+            if (normalizedMoveVec.x > 0)
+                GetComponent<SpriteRenderer>().flipX = false;
+            else if (normalizedMoveVec.x < 0)
+                GetComponent<SpriteRenderer>().flipX = true;
             rb.velocity = new Vector3(normalizedMoveVec.x * speed, 0f, 0f);
         }
     }
