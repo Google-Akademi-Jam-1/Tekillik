@@ -22,6 +22,11 @@ public class EnemySoldierController : MonoBehaviour
         animator = soldier.GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
     }
+    private void Start()
+    {
+        detected = false;
+        animator.SetBool("detected", false);
+    }
 
     private void Update()
     {
@@ -67,18 +72,32 @@ public class EnemySoldierController : MonoBehaviour
 
     public void Detected()
     {
+        StartCoroutine(DetectedCoroutine());
+    }
+
+    IEnumerator DetectedCoroutine()
+    {
+        animator.SetBool("detected", true);
+        detected = true;
         Debug.Log("Detected");
         int animNum = Random.Range(0, 2);
-        if(animNum == 0)
+        if (animNum == 0)
         {
-            animator.SetBool("isShooting1", true);
             SFXManager.instance.PlaySoundEffect("soldierShoot1");
+            animator.SetBool("isShooting1", true);
+            yield return new WaitForSeconds(1.2f);
+            animator.SetBool("isShooting1", false);
+
         }
         else
         {
-            animator.SetBool("isShooting2", true);
             SFXManager.instance.PlaySoundEffect("soldierShoot2");
-        }
+            animator.SetBool("isShooting2", true);
+            yield return new WaitForSeconds(1.2f);
+            animator.SetBool("isShooting2", false);
 
+        }
+        detected = false;
+        animator.SetBool("detected", false);
     }
 }

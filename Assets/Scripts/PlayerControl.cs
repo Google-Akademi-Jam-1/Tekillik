@@ -52,6 +52,12 @@ public class PlayerControl : MonoBehaviour
         {
             Die();
         }
+
+        if (charCollider.IsTouchingLayers(LayerMask.GetMask("soldierView")))
+        {
+            Die();
+            enemySoldierController.Detected();
+        }
         HandleControls();
     }
 
@@ -63,12 +69,6 @@ public class PlayerControl : MonoBehaviour
         if (isFalling && feetCollider.IsTouchingLayers(LayerMask.GetMask("platform")))
         {
             anim.SetBool("isJumping", false);
-        }
-
-        if(collision.tag == "light")
-        {
-            enemySoldierController.detected = true;
-            anim.SetBool("isDead", true);
         }
     }
     //private void OnCollisionEnter2D(Collision2D collision)
