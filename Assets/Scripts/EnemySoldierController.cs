@@ -25,7 +25,6 @@ public class EnemySoldierController : MonoBehaviour
     private void Start()
     {
         detected = false;
-        animator.SetBool("detected", false);
     }
 
     private void Update()
@@ -77,27 +76,22 @@ public class EnemySoldierController : MonoBehaviour
 
     IEnumerator DetectedCoroutine()
     {
-        animator.SetBool("detected", true);
         detected = true;
         Debug.Log("Detected");
         int animNum = Random.Range(0, 2);
         if (animNum == 0)
         {
             SFXManager.instance.PlaySoundEffect("soldierShoot1");
-            animator.SetBool("isShooting1", true);
+            animator.SetTrigger("shoot1");
             yield return new WaitForSeconds(1.2f);
-            animator.SetBool("isShooting1", false);
-
         }
         else
         {
             SFXManager.instance.PlaySoundEffect("soldierShoot2");
-            animator.SetBool("isShooting2", true);
+            animator.SetTrigger("shoot2");
             yield return new WaitForSeconds(1.2f);
-            animator.SetBool("isShooting2", false);
 
         }
         detected = false;
-        animator.SetBool("detected", false);
     }
 }
