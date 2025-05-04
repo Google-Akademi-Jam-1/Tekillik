@@ -27,12 +27,13 @@ public class MissionOneEnemy : MonoBehaviour
     bool shouldDie;
 
     Vector3 startPosition;
-
+    Animator animator;
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         visionRange = GetComponent<CircleCollider2D>();
         enemyCollider = GetComponent<CapsuleCollider2D>();
+        animator = GetComponent<Animator>();
 
         startPosition = transform.position;
     }
@@ -73,6 +74,7 @@ public class MissionOneEnemy : MonoBehaviour
                 GetComponent<SpriteRenderer>().flipX = true;
             rb.velocity = new Vector3(normalizedMoveVec.x * speed, 0f, 0f);
         }
+        animator.SetBool("isWalking", Mathf.Abs(rb.velocity.x) > 0.1f);
     }
 
     void Die()
