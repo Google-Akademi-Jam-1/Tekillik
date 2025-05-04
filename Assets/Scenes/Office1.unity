@@ -247,7 +247,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lines:
-  - "\"SPACE bas SPACE bas SPACE basmayan...\" (Devam\u0131 tarihi kay\u0131tlarda
+  - "\"SPACE bas SPACE bas SPACE basmayan...\" (Devam\u0131 Tekillik kay\u0131tlar\u0131nda
     yer alm\u0131yor.)"
   dm: {fileID: 1408824319}
   canvas: {fileID: 1408824318}
@@ -1084,7 +1084,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lines:
-  - "Profes\xF6r: Ho\u015Fgeldin ajan Locke, nas\u0131ls\u0131n?"
+  - "Profes\xF6r: Tekillik'e ho\u015Fgeldin ajan Locke, nas\u0131ls\u0131n?"
   - "Locke: Sa\u011Folun profes\xF6r, biraz heyecanl\u0131y\u0131m. Biliyorsunuz
     bu i\u015Fte ilk g\xFCn\xFCm."
   - "Uzun zamand\u0131r bu an\u0131 bekliyordum."
