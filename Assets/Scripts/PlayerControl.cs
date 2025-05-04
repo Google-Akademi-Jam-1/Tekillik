@@ -59,11 +59,9 @@ public class PlayerControl : MonoBehaviour
     {
         if (isDead) { return; }
         bool isFalling = (rb.velocity.y < 0);
-        Debug.Log("Inside on trigger and is Falling is:" + isFalling);
         
         if (isFalling && feetCollider.IsTouchingLayers(LayerMask.GetMask("platform")))
         {
-            Debug.Log("I also run");
             anim.SetBool("isJumping", false);
         }
 
