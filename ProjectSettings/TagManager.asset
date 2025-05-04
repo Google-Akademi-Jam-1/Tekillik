@@ -17,6 +17,7 @@ TagManager:
   - enemyBullet
   - playerBullet
   - player
+  - background
   - 
   - 
   - 
@@ -26,8 +27,7 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
+  - soldierView
   - 
   - 
   - 
