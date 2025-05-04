@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MusicManager : MonoBehaviour
 {
@@ -11,6 +12,21 @@ public class MusicManager : MonoBehaviour
     private void Awake()
     {
         source = GetComponent<AudioSource>();
+    }
+
+    private void Start()
+    {
+        string sceneName = SceneManager.GetActiveScene().name;
+
+        // Sahne ismine göre müzik adýný belirle
+        if (sceneName == "Mission1")
+        {
+            PlayMusic("level1 music");
+        }
+        else if (sceneName == "Mission2")
+        {
+            PlayMusic("level2 music");
+        }
     }
 
     public void PlayMusic(string name)

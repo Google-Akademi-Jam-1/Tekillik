@@ -4,16 +4,27 @@ using UnityEngine;
 
 public class SFXManager : MonoBehaviour
 {
+    public static SFXManager instance;
+
     AudioSource source;
     [SerializeField]
     Sound[] SFX;
 
     private void Awake()
     {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+
         source = GetComponent<AudioSource>();
     }
 
-    public void PlayMusic(string name)
+    public void PlaySoundEffect(string name)
     {
         Sound soundEffect2Play = null;
         for (int i = 0; i < SFX.Length; i++)

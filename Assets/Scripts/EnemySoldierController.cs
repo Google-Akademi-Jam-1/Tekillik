@@ -72,10 +72,13 @@ public class EnemySoldierController : MonoBehaviour
         if(animNum == 0)
         {
             animator.SetBool("isShooting1", true);
+            SFXManager.instance.PlaySoundEffect("soldierShoot1");
         }
         else
         {
             animator.SetBool("isShooting2", true);
+            SFXManager.instance.PlaySoundEffect("soldierShoot2");
         }
+
     }
 }

@@ -1062,10 +1062,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   musics:
-  - name: 
-    clip: {fileID: 0}
-    volume: 0
-    pitch: 0
+  - name: level1 music
+    clip: {fileID: 8300000, guid: 4b4e65d46726ec74ab73b371e6ae59b8, type: 3}
+    volume: 0.364
+    pitch: 1
+  - name: level2 music
+    clip: {fileID: 8300000, guid: 15cc11fd05c500e46be10758bb82070f, type: 3}
+    volume: 0.303
+    pitch: 1
 --- !u!1001 &1335829409
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1338,10 +1342,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SFX:
-  - name: 
-    clip: {fileID: 0}
-    volume: 0
-    pitch: 0
+  - name: scientistTalking
+    clip: {fileID: 8300000, guid: 960a4e549d8f95c4099cbd371bc551b5, type: 3}
+    volume: 0.333
+    pitch: 1
+  - name: commanderTalking
+    clip: {fileID: 8300000, guid: 4a98da36c6eb05d4589ceb5499c8222c, type: 3}
+    volume: 0.273
+    pitch: 1
+  - name: bossTalking
+    clip: {fileID: 8300000, guid: c8d351a0bae391d4a8667cc7f9dfe767, type: 3}
+    volume: 0.273
+    pitch: 1
+  - name: soldierShoot1
+    clip: {fileID: 8300000, guid: 4f9bf047e5f1c274bbbea002e84e39d7, type: 3}
+    volume: 0.273
+    pitch: 1
+  - name: soldierShoot2
+    clip: {fileID: 8300000, guid: 15ccb21779872b74e964fd69c31d2f4d, type: 3}
+    volume: 0.273
+    pitch: 1
 --- !u!1001 &1713202113
 PrefabInstance:
   m_ObjectHideFlags: 0
