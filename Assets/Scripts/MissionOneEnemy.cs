@@ -101,6 +101,17 @@ public class MissionOneEnemy : MonoBehaviour
 
     void Die()
     {
+        if (shouldDie) return;
+
+        shouldDie = true;
+        animator.SetTrigger("deathTrigger");
+
+
+        rb.velocity = Vector2.zero;
+        rb.isKinematic = true;
+
+        GetComponent<Collider2D>().enabled = false;
+
         StartCoroutine(WaitDie());
     }
 
