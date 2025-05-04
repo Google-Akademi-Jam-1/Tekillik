@@ -86,7 +86,7 @@ MonoBehaviour:
   moveSpeed: 5
   minX: 4.33
   maxX: 9.59
-  detected: 0
+  animator: {fileID: 5023310237203901837}
 --- !u!50 &1358554788045600575
 Rigidbody2D:
   serializedVersion: 4

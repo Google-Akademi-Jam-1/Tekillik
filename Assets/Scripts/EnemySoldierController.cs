@@ -9,27 +9,22 @@ public class EnemySoldierController : MonoBehaviour
     GameObject soldier;
     [SerializeField]
     float moveSpeed = 2f, minX, maxX;
+    [SerializeField]
     private Animator animator;
 
     private Rigidbody2D rb;
-    public bool detected = false;
 
     private int direction = 1; // 1 = sað, -1 = sol
     private bool isWaiting = false; // Bekleme kontrolü
 
     private void Awake()
     {
-        animator = soldier.GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
-    }
-    private void Start()
-    {
-        detected = false;
     }
 
     private void Update()
     {
-        if (!detected && !isWaiting)
+        if (!isWaiting)
         {
             Move();
         }
@@ -76,22 +71,26 @@ public class EnemySoldierController : MonoBehaviour
 
     IEnumerator DetectedCoroutine()
     {
-        detected = true;
+        isWaiting = true;
+        rb.velocity = Vector2.zero;
+        animator.SetBool("isWalking", false);
         Debug.Log("Detected");
         int animNum = Random.Range(0, 2);
         if (animNum == 0)
         {
             SFXManager.instance.PlaySoundEffect("soldierShoot1");
+            animator.Play("soldierShoot1", 0, 0f);
             animator.SetTrigger("shoot1");
-            yield return new WaitForSeconds(1.2f);
         }
         else
         {
             SFXManager.instance.PlaySoundEffect("soldierShoot2");
             animator.SetTrigger("shoot2");
-            yield return new WaitForSeconds(1.2f);
-
+            animator.Play("soldierShoot2", 0, 0f);
         }
-        detected = false;
+        yield return new WaitForSeconds(1.2f);
+
+        isWaiting = false;
     }
+
 }
