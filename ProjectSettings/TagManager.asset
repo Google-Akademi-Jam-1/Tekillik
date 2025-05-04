@@ -6,6 +6,7 @@ TagManager:
   tags:
   - light
   - EnemyBullet
+  - EnemySoldier
   layers:
   - Default
   - TransparentFX
