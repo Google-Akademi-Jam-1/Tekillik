@@ -372,8 +372,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lines:
-  - "\"SPACE bas SPACE bas SPACE basmayan...\" (Devam\u0131 Tekillik kay\u0131tlar\u0131nda
-    yer alm\u0131yor.)"
+  - "\"Tekillik tarihi insanlar\u0131 SPACE basanlar ve basmayanlar olarak ikiye
+    ay\u0131r\u0131r\""
   talker: 
   dm: {fileID: 1408824319}
   canvas: {fileID: 1408824318}
