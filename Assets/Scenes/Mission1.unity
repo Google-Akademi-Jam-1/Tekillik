@@ -47247,34 +47247,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 2970361954505292208, guid: 608e85f35c31bc8438f47f41b32a7c4b, type: 3}
-      propertyPath: speed
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 2970361954505292208, guid: 608e85f35c31bc8438f47f41b32a7c4b, type: 3}
-      propertyPath: jumpForce
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 2970361954505292208, guid: 608e85f35c31bc8438f47f41b32a7c4b, type: 3}
-      propertyPath: bulletSpeed
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 5235129113930472568, guid: 608e85f35c31bc8438f47f41b32a7c4b, type: 3}
-      propertyPath: m_Size.x
-      value: 0.88558686
-      objectReference: {fileID: 0}
-    - target: {fileID: 5235129113930472568, guid: 608e85f35c31bc8438f47f41b32a7c4b, type: 3}
-      propertyPath: m_Size.y
-      value: 0.35922962
-      objectReference: {fileID: 0}
-    - target: {fileID: 5235129113930472568, guid: 608e85f35c31bc8438f47f41b32a7c4b, type: 3}
-      propertyPath: m_Offset.x
-      value: -0.023405015
-      objectReference: {fileID: 0}
-    - target: {fileID: 5235129113930472568, guid: 608e85f35c31bc8438f47f41b32a7c4b, type: 3}
-      propertyPath: m_Offset.y
-      value: -1.1690526
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
