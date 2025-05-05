@@ -55,6 +55,11 @@ public class MusicManager : MonoBehaviour
             source.Stop();
             PlayMusic("office music");
         }
+        else if (sceneName == "Intro" || sceneName == "MainMenu")
+        {
+            source.Stop();
+            PlayMusic("main menu music");
+        }
     }
 
 
