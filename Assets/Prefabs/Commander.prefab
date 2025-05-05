@@ -315,4 +315,5 @@ MonoBehaviour:
   talkers:
   - player
   - commander
+  talkableObject: 1
   playersTalkElements: 02000000

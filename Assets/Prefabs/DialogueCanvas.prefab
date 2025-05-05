@@ -176,8 +176,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 0.39215687}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -325,7 +325,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac9a6b445a7d8ff4ea21387c33afe3dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - "P: G\xFCnayd\u0131n evlad\u0131m nas\u0131ls\u0131n!"
+  - "K: Sa\u011Folun x bey, biraz heyecanl\u0131y\u0131m. Biliyorsunuz bu i\u015Fte
+    ilk g\xFCn\xFCm."
   textSpeed: 0.05
   textComp: {fileID: 6439098837290148627}
   canvas: {fileID: 1722267785484397395}
@@ -333,3 +336,4 @@ MonoBehaviour:
   talker: 
   talkers: []
   playersTalkElements: 
+  talkableObject: 0

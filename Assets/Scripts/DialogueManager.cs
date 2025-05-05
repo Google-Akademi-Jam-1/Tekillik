@@ -26,6 +26,8 @@ public class DialogueManager : MonoBehaviour
     public string[] talkers;
     public int[] playersTalkElements;
 
+    public bool talkableObject;
+
     private void Start()
     {
         index = 0;
@@ -37,7 +39,11 @@ public class DialogueManager : MonoBehaviour
         if (!isDialogueStarted && Input.GetKeyDown(KeyCode.E))
         {
             textComp.text = string.Empty;
-            talker = talkers[1];
+
+            if (talkableObject)
+            {
+                talker = talkers[1];
+            }
             RunDialogue();
             isDialogueStarted = true;
         }
@@ -52,14 +58,19 @@ public class DialogueManager : MonoBehaviour
         {
             Debug.Log(index);
             textComp.text = string.Empty;
-            talker = talkers[1];
-            for (int i = 0; i < playersTalkElements.Length; i++)
+            if(talkableObject)
             {
-                if(index+1 == playersTalkElements[i])
+                talker = talkers[1];
+
+                for (int i = 0; i < playersTalkElements.Length; i++)
                 {
-                    talker = talkers[0];
+                    if (index + 1 == playersTalkElements[i])
+                    {
+                        talker = talkers[0];
+                    }
                 }
             }
+
             NextLine();
         }
     }

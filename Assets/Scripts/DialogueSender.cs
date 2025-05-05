@@ -23,17 +23,23 @@ public class DialogueSender : MonoBehaviour
     TextMeshProUGUI tmp;
 
     public string[] talkers;
+    public bool talkableObject;
     public int[] playersTalkElements;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            dm.talkableObject = talkableObject;
             dm.talkers = talkers;
             dm.playersTalkElements = playersTalkElements;
             dm.talker = talker;
             dm.lines = lines;
             canvas.gameObject.SetActive(true);
+            if (talkableObject && talkers[1] == "commander" || talkers[1] == "proffessor")
+            {
+                MusicManager.instance.StopMusic();
+            }
         }
     }
 

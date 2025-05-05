@@ -378,6 +378,9 @@ MonoBehaviour:
   dm: {fileID: 1408824319}
   canvas: {fileID: 1408824318}
   tmp: {fileID: 1747245183}
+  talkers: []
+  talkableObject: 0
+  playersTalkElements: 
 --- !u!1 &856063836
 GameObject:
   m_ObjectHideFlags: 0
@@ -449,8 +452,8 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1849591103
-  m_SortingLayer: 4
+  m_SortingLayerID: 2080016215
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -1230,6 +1233,11 @@ MonoBehaviour:
   dm: {fileID: 1408824319}
   canvas: {fileID: 1408824318}
   tmp: {fileID: 1747245183}
+  talkers:
+  - player
+  - boss
+  talkableObject: 1
+  playersTalkElements: 01000000020000000600000008000000
 --- !u!1 &934727045
 GameObject:
   m_ObjectHideFlags: 0
@@ -32500,6 +32508,9 @@ MonoBehaviour:
   dm: {fileID: 1408824319}
   canvas: {fileID: 1408824318}
   tmp: {fileID: 1747245183}
+  talkers: []
+  talkableObject: 0
+  playersTalkElements: 
 --- !u!1 &1729108342
 GameObject:
   m_ObjectHideFlags: 0
@@ -32552,6 +32563,9 @@ MonoBehaviour:
   dm: {fileID: 1408824319}
   canvas: {fileID: 1408824318}
   tmp: {fileID: 1747245183}
+  talkers: []
+  talkableObject: 0
+  playersTalkElements: 
 --- !u!61 &1729108345
 BoxCollider2D:
   m_ObjectHideFlags: 0

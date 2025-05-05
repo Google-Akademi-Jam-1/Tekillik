@@ -62,6 +62,10 @@ public class MusicManager : MonoBehaviour
         }
     }
 
+    public void StopMusic()
+    {
+        source.Stop();
+    }
 
     public void PlayMusic(string name)
     {
