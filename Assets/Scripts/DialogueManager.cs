@@ -23,6 +23,8 @@ public class DialogueManager : MonoBehaviour
     public bool isDialogueStarted = false;
     bool writingLine = false;
     public string talker;
+    public string[] talkers;
+    public int[] playersTalkElements;
 
     private void Start()
     {
@@ -35,6 +37,7 @@ public class DialogueManager : MonoBehaviour
         if (!isDialogueStarted && Input.GetKeyDown(KeyCode.E))
         {
             textComp.text = string.Empty;
+            talker = talkers[1];
             RunDialogue();
             isDialogueStarted = true;
         }
@@ -47,7 +50,16 @@ public class DialogueManager : MonoBehaviour
         }
         else if (!writingLine && isDialogueStarted && Input.GetKeyDown(KeyCode.E))
         {
+            Debug.Log(index);
             textComp.text = string.Empty;
+            talker = talkers[1];
+            for (int i = 0; i < playersTalkElements.Length; i++)
+            {
+                if(index+1 == playersTalkElements[i])
+                {
+                    talker = talkers[0];
+                }
+            }
             NextLine();
         }
     }

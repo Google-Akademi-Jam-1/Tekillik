@@ -22,10 +22,15 @@ public class DialogueSender : MonoBehaviour
     [SerializeField]
     TextMeshProUGUI tmp;
 
+    public string[] talkers;
+    public int[] playersTalkElements;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            dm.talkers = talkers;
+            dm.playersTalkElements = playersTalkElements;
             dm.talker = talker;
             dm.lines = lines;
             canvas.gameObject.SetActive(true);

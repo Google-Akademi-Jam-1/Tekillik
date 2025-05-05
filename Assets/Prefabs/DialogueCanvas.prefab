@@ -331,3 +331,5 @@ MonoBehaviour:
   canvas: {fileID: 1722267785484397395}
   isDialogueStarted: 0
   talker: 
+  talkers: []
+  playersTalkElements: 

@@ -35,6 +35,8 @@ public class PlayerControl : MonoBehaviour
     bool isDead = false;
     bool isShootEnabled = true;
 
+    public bool gamePaused;
+
     private void Awake()
     {
         enemySoldierController = Object.FindObjectOfType<EnemySoldierController>();
@@ -53,7 +55,7 @@ public class PlayerControl : MonoBehaviour
         rb.velocity = new Vector2(0.0f, rb.velocity.y);
         isShootEnabled = SceneManager.GetActiveScene().buildIndex != 5 && SceneManager.GetActiveScene().buildIndex != 7;
         
-        if (isDead) { return; }
+        if (isDead || gamePaused) { return; }
         if (charCollider.IsTouchingLayers(LayerMask.GetMask("enemyBullet")))
         {
             Die();
