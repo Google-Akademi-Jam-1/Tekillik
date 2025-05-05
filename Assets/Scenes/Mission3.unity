@@ -1729,7 +1729,8 @@ MonoBehaviour:
   - "Silahlar ger\xE7ekten sustu mu, yoksa sadece sahneyi de\u011Fi\u015Ftirip oyuncular\u0131
     yeniden mi dizdik?"
   - "Sonra o bilim adam\u0131..."
-  - "Bir bombay\u0131 de\u011Fil, bilimi baltalad\u0131m belki de."
+  - "Bir bombay\u0131 de\u011Fil, bilimi baltalam\u0131\u015F oldum belki de. Kim
+    bilir?"
   - "Aileden bahsetmi\u015Fti bir g\xFCn bana profes\xF6r. Belki de bir zamanlar
     sahip oldu\u011Fum ama Tekillik'in pen\xE7esiyle elimden al\u0131nan..."
   - "Gitti\u011Fim her g\xF6revde bir ya\u015Fam\u0131, bir se\xE7imi, bir evreni
@@ -1739,6 +1740,7 @@ MonoBehaviour:
   - "Ac\u0131s\u0131n\u0131 da \xE7ekti\u011Fimiz, felaketleriyle ders ald\u0131\u011F\u0131m\u0131z
     bir d\xFCnya, masal gibi de\u011Fil belki ama en az\u0131ndan \"ger\xE7ek\"."
   - "\xD6mr\xFCmde ilk ve belki de son defa bir se\xE7im \u015Fans\u0131m var \u015Fimdi."
+  - Tekillik'i var edecek olan teorem benim elimde.
   talker: 
   dm: {fileID: 2062189327}
   canvas: {fileID: 2062189326}
