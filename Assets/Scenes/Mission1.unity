@@ -48514,6 +48514,18 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: -0.01
       objectReference: {fileID: 0}
+    - target: {fileID: 3524296350854211475, guid: 63622fdb22a386a46925edca7e8b33d0, type: 3}
+      propertyPath: m_Size.x
+      value: 0.19365756
+      objectReference: {fileID: 0}
+    - target: {fileID: 3524296350854211475, guid: 63622fdb22a386a46925edca7e8b33d0, type: 3}
+      propertyPath: m_Size.y
+      value: 0.70608747
+      objectReference: {fileID: 0}
+    - target: {fileID: 3524296350854211475, guid: 63622fdb22a386a46925edca7e8b33d0, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.02405174
+      objectReference: {fileID: 0}
     - target: {fileID: 5050248100657840770, guid: 63622fdb22a386a46925edca7e8b33d0, type: 3}
       propertyPath: dm
       value: 
@@ -48588,12 +48600,16 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5631966420593587369, guid: 63622fdb22a386a46925edca7e8b33d0, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3.9341474
+      objectReference: {fileID: 0}
+    - target: {fileID: 5631966420593587369, guid: 63622fdb22a386a46925edca7e8b33d0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 90.89
       objectReference: {fileID: 0}
     - target: {fileID: 5631966420593587369, guid: 63622fdb22a386a46925edca7e8b33d0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 16.45
+      value: 16.4421
       objectReference: {fileID: 0}
     - target: {fileID: 5631966420593587369, guid: 63622fdb22a386a46925edca7e8b33d0, type: 3}
       propertyPath: m_LocalPosition.z
@@ -48659,7 +48675,7 @@ MonoBehaviour:
   speed: 1.8
   speedMultiplier: 1
   player: {fileID: 1925701316}
-  tooCloseTreshold: 2
+  tooCloseTreshold: 8.5
   enemyBullet: {fileID: 4016629749498320446, guid: e138292c490fb904897f853b3f88c896, type: 3}
   bulletSpawnPoint: {fileID: 1245263857}
   fireCooldown: 1
