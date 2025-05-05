@@ -1127,8 +1127,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.022566557, y: 0}
-  m_Size: {x: 1.9477773, y: 2}
+  m_Offset: {x: -1.6913388, y: 0}
+  m_Size: {x: 5.2853217, y: 4.3322306}
   m_Direction: 0
 --- !u!212 &932888009
 SpriteRenderer:
@@ -32302,10 +32302,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: DialogueCanvas
       objectReference: {fileID: 0}
-    - target: {fileID: 1166910406693856671, guid: 1d43080e1b4a5e04581929d0055253c5, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3332039178201077225, guid: 1d43080e1b4a5e04581929d0055253c5, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -32385,92 +32381,6 @@ PrefabInstance:
     - target: {fileID: 3332039178201077225, guid: 1d43080e1b4a5e04581929d0055253c5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4987677009509947474, guid: 1d43080e1b4a5e04581929d0055253c5, type: 3}
-      propertyPath: m_Type
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4987677009509947474, guid: 1d43080e1b4a5e04581929d0055253c5, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: c1e04bd9a6d11a4428a5e9a7c338fc8f, type: 3}
-    - target: {fileID: 4987677009509947474, guid: 1d43080e1b4a5e04581929d0055253c5, type: 3}
-      propertyPath: m_FillAmount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4987677009509947474, guid: 1d43080e1b4a5e04581929d0055253c5, type: 3}
-      propertyPath: m_UseSpriteMesh
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5874344038448914621, guid: 1d43080e1b4a5e04581929d0055253c5, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6829067404700411541, guid: 1d43080e1b4a5e04581929d0055253c5, type: 3}
-      propertyPath: textSpeed
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6829067404700411541, guid: 1d43080e1b4a5e04581929d0055253c5, type: 3}
-      propertyPath: lines.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6829067404700411541, guid: 1d43080e1b4a5e04581929d0055253c5, type: 3}
-      propertyPath: lines.Array.data[0]
-      value: "P: G\xFCnayd\u0131n evlad\u0131m nas\u0131ls\u0131n!"
-      objectReference: {fileID: 0}
-    - target: {fileID: 6829067404700411541, guid: 1d43080e1b4a5e04581929d0055253c5, type: 3}
-      propertyPath: lines.Array.data[1]
-      value: "K: Sa\u011Folun x bey, biraz heyecanl\u0131y\u0131m. Biliyorsunuz bu
-        i\u015Fte ilk g\xFCn\xFCm."
-      objectReference: {fileID: 0}
-    - target: {fileID: 6829067404700411541, guid: 1d43080e1b4a5e04581929d0055253c5, type: 3}
-      propertyPath: lines.Array.data[2]
-      value: "Uzun zamand\u0131r bu an\u0131 bekliyordum."
-      objectReference: {fileID: 0}
-    - target: {fileID: 6829067404700411541, guid: 1d43080e1b4a5e04581929d0055253c5, type: 3}
-      propertyPath: lines.Array.data[3]
-      value: "P: Heyecan\u0131nda hakl\u0131s\u0131n. Buras\u0131 tarihin yaz\u0131ld\u0131\u011F\u0131,
-        insanl\u0131\u011F\u0131n kaderinin belirlendi\u011Fi yer."
-      objectReference: {fileID: 0}
-    - target: {fileID: 6829067404700411541, guid: 1d43080e1b4a5e04581929d0055253c5, type: 3}
-      propertyPath: lines.Array.data[4]
-      value: "Merak etme, ben de Arf Teoremini ilk ke\u015Ffetti\u011Fimde ve buray\u0131
-        kurdu\u011Fumda senin gibiydim."
-      objectReference: {fileID: 0}
-    - target: {fileID: 6829067404700411541, guid: 1d43080e1b4a5e04581929d0055253c5, type: 3}
-      propertyPath: lines.Array.data[5]
-      value: "Ne g\xFCnlerdi ama!"
-      objectReference: {fileID: 0}
-    - target: {fileID: 6829067404700411541, guid: 1d43080e1b4a5e04581929d0055253c5, type: 3}
-      propertyPath: lines.Array.data[6]
-      value: "Sen sadece g\xF6revini Lay\u0131k\u0131yla yerine getir, sana g\xFCvenim
-        tam."
-      objectReference: {fileID: 0}
-    - target: {fileID: 6829067404700411541, guid: 1d43080e1b4a5e04581929d0055253c5, type: 3}
-      propertyPath: lines.Array.data[7]
-      value: "K: Bahsetti\u011Finiz g\xF6rev nedir?"
-      objectReference: {fileID: 0}
-    - target: {fileID: 6829067404700411541, guid: 1d43080e1b4a5e04581929d0055253c5, type: 3}
-      propertyPath: lines.Array.data[8]
-      value: "P: 19. y\xFCzy\u0131la gideceksin. Hedefin on milyonlar\u0131 \xF6ld\xFCrecek
-        bir sava\u015F\u0131n sorumlusu."
-      objectReference: {fileID: 0}
-    - target: {fileID: 6829067404700411541, guid: 1d43080e1b4a5e04581929d0055253c5, type: 3}
-      propertyPath: lines.Array.data[9]
-      value: "General x'i sana belitrilen konumda \xF6ld\xFCrmen gerekiyor."
-      objectReference: {fileID: 0}
-    - target: {fileID: 6829067404700411541, guid: 1d43080e1b4a5e04581929d0055253c5, type: 3}
-      propertyPath: lines.Array.data[10]
-      value: "K: Anla\u015F\u0131ld\u0131. Hangi te\xE7hizatlarla gidece\u011Fim?"
-      objectReference: {fileID: 0}
-    - target: {fileID: 6829067404700411541, guid: 1d43080e1b4a5e04581929d0055253c5, type: 3}
-      propertyPath: lines.Array.data[11]
-      value: "P: Bu ve gelecekteki g\xF6revlerin i\xE7in sana bir plazma silah\u0131
-        verece\u011Fiz."
-      objectReference: {fileID: 0}
-    - target: {fileID: 6829067404700411541, guid: 1d43080e1b4a5e04581929d0055253c5, type: 3}
-      propertyPath: lines.Array.data[12]
-      value: "Bol \u015Fans..."
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
