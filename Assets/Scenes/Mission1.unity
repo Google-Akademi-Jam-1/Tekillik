@@ -48474,6 +48474,18 @@ PrefabInstance:
       propertyPath: lines.Array.data[9]
       value: "G\xFCl\xFCn\xE7..."
       objectReference: {fileID: 0}
+    - target: {fileID: 5050248100657840770, guid: 63622fdb22a386a46925edca7e8b33d0, type: 3}
+      propertyPath: playersTalkElements.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5050248100657840770, guid: 63622fdb22a386a46925edca7e8b33d0, type: 3}
+      propertyPath: playersTalkElements.Array.data[1]
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5050248100657840770, guid: 63622fdb22a386a46925edca7e8b33d0, type: 3}
+      propertyPath: playersTalkElements.Array.data[2]
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5631966420593587369, guid: 63622fdb22a386a46925edca7e8b33d0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 88.99
