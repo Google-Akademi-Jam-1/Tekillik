@@ -705,7 +705,7 @@ GameObject:
   - component: {fileID: 745675791}
   - component: {fileID: 745675792}
   m_Layer: 0
-  m_Name: proffesor
+  m_Name: scientist
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -720,7 +720,7 @@ Transform:
   m_GameObject: {fileID: 745675788}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 37.77, y: 44.33, z: 0.08637603}
+  m_LocalPosition: {x: 37.8, y: 44.33, z: 0.08637603}
   m_LocalScale: {x: 0.4, y: 0.45, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -753,7 +753,7 @@ MonoBehaviour:
   - "Enrico: Sana ne desem bo\u015F."
   - "Al\xE7ak bir tetik\xE7iden fazlas\u0131 de\u011Filsin. Ama g\xFCn\xFCn birinde
     beni anlayacaks\u0131n..."
-  talker: 
+  talker: scientist
   dm: {fileID: 609018372}
   canvas: {fileID: 192037199}
   tmp: {fileID: 1838910900}
@@ -800,7 +800,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 67a7ffe1a6e0c9940afa4f67be1a0efa, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 4.08, y: 6.12}
@@ -1144,11 +1144,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5088645991229980054, guid: 5ceec01c280ea6a47a9093446c2c3530, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.1503334
+      value: 33.5
       objectReference: {fileID: 0}
     - target: {fileID: 5088645991229980054, guid: 5ceec01c280ea6a47a9093446c2c3530, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.88565135
+      value: 44.59
       objectReference: {fileID: 0}
     - target: {fileID: 5513890608811213984, guid: 5ceec01c280ea6a47a9093446c2c3530, type: 3}
       propertyPath: m_BoundingShape2D
@@ -1156,11 +1156,11 @@ PrefabInstance:
       objectReference: {fileID: 397057142}
     - target: {fileID: 6251686571167135899, guid: 5ceec01c280ea6a47a9093446c2c3530, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.5
+      value: 33.5
       objectReference: {fileID: 0}
     - target: {fileID: 6251686571167135899, guid: 5ceec01c280ea6a47a9093446c2c3530, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.1
+      value: 44.59
       objectReference: {fileID: 0}
     - target: {fileID: 6370014760542341493, guid: 5ceec01c280ea6a47a9093446c2c3530, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1231,24 +1231,12 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 19605342124357907, guid: 608e85f35c31bc8438f47f41b32a7c4b, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.1591
-      objectReference: {fileID: 0}
-    - target: {fileID: 19605342124357907, guid: 608e85f35c31bc8438f47f41b32a7c4b, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.1591
-      objectReference: {fileID: 0}
-    - target: {fileID: 19605342124357907, guid: 608e85f35c31bc8438f47f41b32a7c4b, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.1591
-      objectReference: {fileID: 0}
-    - target: {fileID: 19605342124357907, guid: 608e85f35c31bc8438f47f41b32a7c4b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.5
+      value: 33.5
       objectReference: {fileID: 0}
     - target: {fileID: 19605342124357907, guid: 608e85f35c31bc8438f47f41b32a7c4b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.1
+      value: 44.59
       objectReference: {fileID: 0}
     - target: {fileID: 19605342124357907, guid: 608e85f35c31bc8438f47f41b32a7c4b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1285,10 +1273,6 @@ PrefabInstance:
     - target: {fileID: 2545333844332300248, guid: 608e85f35c31bc8438f47f41b32a7c4b, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 2970361954505292208, guid: 608e85f35c31bc8438f47f41b32a7c4b, type: 3}
-      propertyPath: jumpForce
-      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

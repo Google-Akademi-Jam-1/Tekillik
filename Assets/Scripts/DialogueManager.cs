@@ -7,6 +7,7 @@ public class DialogueManager : MonoBehaviour
 {
     public string[] lines;
 
+
     [SerializeField]
     float textSpeed;
 
@@ -19,7 +20,9 @@ public class DialogueManager : MonoBehaviour
 
     public bool isDialogueStarted = false;
     bool writingLine = false;
-    
+
+    public string talker;
+
     private void Start()
     {
         index = 0;
@@ -70,12 +73,14 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
+
     public IEnumerator TypeLine()
     {
         writingLine = true;
         foreach (char c in lines[index].ToCharArray())
         {
             textComp.text += c;
+            SFXManager.instance.PlaySoundEffect(talker);
             yield return new WaitForSeconds(textSpeed);
         }
         writingLine = false;

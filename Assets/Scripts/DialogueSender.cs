@@ -26,9 +26,9 @@ public class DialogueSender : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            dm.talker = talker;
             dm.lines = lines;
             canvas.gameObject.SetActive(true);
-            SFXManager.instance.PlaySoundEffect(talker);
         }
     }
 

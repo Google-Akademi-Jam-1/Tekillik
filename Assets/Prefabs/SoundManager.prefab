@@ -45,16 +45,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SFX:
-  - name: scientist
-    clip: {fileID: 8300000, guid: 960a4e549d8f95c4099cbd371bc551b5, type: 3}
+  - name: boss
+    clip: {fileID: 8300000, guid: 4c8a35f90859575408f229c3314a5666, type: 3}
     volume: 0.333
     pitch: 1
   - name: commander
-    clip: {fileID: 8300000, guid: 4a98da36c6eb05d4589ceb5499c8222c, type: 3}
+    clip: {fileID: 8300000, guid: 220ccb41e3976fd4d8b72471b1d1917f, type: 3}
     volume: 0.273
     pitch: 1
-  - name: boss
-    clip: {fileID: 8300000, guid: c8d351a0bae391d4a8667cc7f9dfe767, type: 3}
+  - name: player
+    clip: {fileID: 8300000, guid: ecb552201e03d0f40a5813404add4054, type: 3}
     volume: 0.273
     pitch: 1
   - name: soldierShoot1
@@ -69,13 +69,13 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 71d5a5ecb9261b2499a7ef1d88c4ac1d, type: 3}
     volume: 0.273
     pitch: 1
-  - name: maleGrunt
-    clip: {fileID: 8300000, guid: db27e89ad02b1bf47837f8c052ed923b, type: 3}
-    volume: 0.273
-    pitch: 1
   - name: maleDeath
     clip: {fileID: 8300000, guid: ce9e768b87f4e4f4493e2037f52356ea, type: 3}
     volume: 0.273
+    pitch: 1
+  - name: scientist
+    clip: {fileID: 8300000, guid: dd75bdf15cee99c489f0f6e9be4f9fdc, type: 3}
+    volume: 0.28
     pitch: 1
 --- !u!1 &5658921451053177137
 GameObject:

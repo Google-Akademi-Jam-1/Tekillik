@@ -39,20 +39,20 @@ public class SFXManager : MonoBehaviour
 
         if (soundEffect2Play != null)
         {
-            AudioSource source = GetAvailableAudioSource();
-
+            AudioSource source = GetAvailableAudioSource(name);
+            source.name = soundEffect2Play.name;
             source.clip = soundEffect2Play.clip;
             source.pitch = soundEffect2Play.pitch;
             source.volume = soundEffect2Play.volume;
             source.Play();
         }
     }
-    private AudioSource GetAvailableAudioSource()
+    private AudioSource GetAvailableAudioSource(string name)
     {
         // Boþta bir kaynak varsa onu döndür
         foreach (var src in audioSources)
         {
-            if (!src.isPlaying)
+            if (!src.isPlaying || src.name == name)
                 return src;
         }
 
