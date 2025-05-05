@@ -33,6 +33,7 @@ public class PlayerControl : MonoBehaviour
 
     bool onGround = true;
     bool isDead = false;
+    bool isShootEnabled = true;
 
     private void Awake()
     {
@@ -41,12 +42,16 @@ public class PlayerControl : MonoBehaviour
         feetCollider = GetComponent<BoxCollider2D>();
         anim = GetComponent<Animator>();
         charCollider = GetComponent<CapsuleCollider2D>();
+    }
 
-        // NOT SURE THIS WILL WORK
+    private void Start()
+    {
     }
 
     private void Update()
     {
+        isShootEnabled = SceneManager.GetActiveScene().buildIndex != 5 && SceneManager.GetActiveScene().buildIndex != 7;
+    
         if (isDead) { return; }
         if (charCollider.IsTouchingLayers(LayerMask.GetMask("enemyBullet")))
         {
@@ -105,7 +110,7 @@ public class PlayerControl : MonoBehaviour
         {
             Jump();
         }
-        if (Input.GetKeyDown(KeyCode.Mouse0))
+        if (Input.GetKeyDown(KeyCode.Mouse0) && isShootEnabled)
         {
             Shoot();
         }

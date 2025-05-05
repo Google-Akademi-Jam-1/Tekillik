@@ -179,7 +179,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: "FORM\xDCL\xDC VERECEK M\u0130S\u0130N?"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -213,7 +213,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -267,7 +267,6 @@ GameObject:
   - component: {fileID: 440732164}
   - component: {fileID: 440732166}
   - component: {fileID: 440732165}
-  - component: {fileID: 440732167}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -292,7 +291,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 311}
   m_SizeDelta: {x: -800, y: -700}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &440732165
@@ -333,24 +332,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 440732163}
   m_CullTransparentMesh: 1
---- !u!114 &440732167
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 440732163}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac9a6b445a7d8ff4ea21387c33afe3dd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lines: []
-  textSpeed: 0.05
-  textComp: {fileID: 238281629}
-  canvas: {fileID: 2016755343}
-  isDialogueStarted: 0
-  talker: 
 --- !u!1001 &520920836
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -697,19 +678,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5088645991229980054, guid: 5ceec01c280ea6a47a9093446c2c3530, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.5000005
+      value: 18.47
       objectReference: {fileID: 0}
     - target: {fileID: 5088645991229980054, guid: 5ceec01c280ea6a47a9093446c2c3530, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.88
+      value: -1.19
       objectReference: {fileID: 0}
     - target: {fileID: 6251686571167135899, guid: 5ceec01c280ea6a47a9093446c2c3530, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.5000005
+      value: 18.47
       objectReference: {fileID: 0}
     - target: {fileID: 6251686571167135899, guid: 5ceec01c280ea6a47a9093446c2c3530, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.88
+      value: -1.19
       objectReference: {fileID: 0}
     - target: {fileID: 6370014760542341493, guid: 5ceec01c280ea6a47a9093446c2c3530, type: 3}
       propertyPath: m_LocalPosition.x
@@ -894,7 +875,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01c1e51feadaade4286127b7f9d60eed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  finalCanvas: {fileID: 2016755343}
+  canvas: {fileID: 2016755343}
 --- !u!114 &905431378
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -910,7 +891,7 @@ MonoBehaviour:
   lines:
   - "FORM\xDCL\xDC VERECEK M\u0130S\u0130N?"
   talker: 
-  dm: {fileID: 440732167}
+  dm: {fileID: 0}
   canvas: {fileID: 2016755343}
   tmp: {fileID: 238281629}
 --- !u!1 &1007447939
@@ -1882,11 +1863,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 19605342124357907, guid: 608e85f35c31bc8438f47f41b32a7c4b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.5
+      value: 18.47
       objectReference: {fileID: 0}
     - target: {fileID: 19605342124357907, guid: 608e85f35c31bc8438f47f41b32a7c4b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.88
+      value: -1.19
       objectReference: {fileID: 0}
     - target: {fileID: 19605342124357907, guid: 608e85f35c31bc8438f47f41b32a7c4b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -29014,7 +28995,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2016755340
 RectTransform:
   m_ObjectHideFlags: 0
