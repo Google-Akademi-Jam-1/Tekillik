@@ -969,7 +969,7 @@ MonoBehaviour:
   - {fileID: 504132685}
   - {fileID: 1350278444}
   myButton: {fileID: 4771897864471954301}
-  waitDuration: 6
+  waitDuration: 8
   transitionDuration: 1
 --- !u!1 &1007447939
 GameObject:

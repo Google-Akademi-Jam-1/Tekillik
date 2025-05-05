@@ -898,7 +898,7 @@ MonoBehaviour:
   - {fileID: 915640681}
   - {fileID: 1249075394}
   - {fileID: 1725850688}
-  waitDuration: 5
+  waitDuration: 8
   transitionDuration: 1
   myButton: {fileID: 948938721}
 --- !u!4 &2030489285
