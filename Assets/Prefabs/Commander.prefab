@@ -97,8 +97,8 @@ GameObject:
   - component: {fileID: 3524296350854211475}
   - component: {fileID: 1388366144507576851}
   - component: {fileID: 8905276112885217263}
-  - component: {fileID: 8575638667039494151}
   - component: {fileID: 4797619775641248374}
+  - component: {fileID: 5050248100657840770}
   m_Layer: 11
   m_Name: Commander
   m_TagString: EnemySoldier
@@ -271,25 +271,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!114 &8575638667039494151
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6231987305318922060}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 52f1dbf3bd60caf4196cc2ca895b69ba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 1.8
-  speedMultiplier: 1
-  player: {fileID: 0}
-  tooCloseTreshold: 2
-  enemyBullet: {fileID: 4016629749498320446, guid: e138292c490fb904897f853b3f88c896, type: 3}
-  bulletSpawnPoint: {fileID: 4410761776831174261}
-  fireCooldown: 1
 --- !u!95 &4797619775641248374
 Animator:
   serializedVersion: 5
@@ -311,3 +292,27 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &5050248100657840770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6231987305318922060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4adb71393f7cb0499c66144473c8ff0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lines:
+  - "Komutan: Sadece g\xF6revimi yap\u0131yordum. Bana bunu yapamazs\u0131n."
+  - "Seni k\u0131n\u0131yorum."
+  - 'Player: Beni ilgilendirmiyor.'
+  talker: 
+  dm: {fileID: 0}
+  canvas: {fileID: 0}
+  tmp: {fileID: 0}
+  talkers:
+  - player
+  - commander
+  playersTalkElements: 02000000
