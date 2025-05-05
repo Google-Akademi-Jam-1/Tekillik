@@ -678,19 +678,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5088645991229980054, guid: 5ceec01c280ea6a47a9093446c2c3530, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 18.47
+      value: -3.9600005
       objectReference: {fileID: 0}
     - target: {fileID: 5088645991229980054, guid: 5ceec01c280ea6a47a9093446c2c3530, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.19
+      value: -1.27
       objectReference: {fileID: 0}
     - target: {fileID: 6251686571167135899, guid: 5ceec01c280ea6a47a9093446c2c3530, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 18.47
+      value: -3.9600005
       objectReference: {fileID: 0}
     - target: {fileID: 6251686571167135899, guid: 5ceec01c280ea6a47a9093446c2c3530, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.19
+      value: -1.27
       objectReference: {fileID: 0}
     - target: {fileID: 6370014760542341493, guid: 5ceec01c280ea6a47a9093446c2c3530, type: 3}
       propertyPath: m_LocalPosition.x
@@ -753,7 +753,6 @@ GameObject:
   - component: {fileID: 905431373}
   - component: {fileID: 905431376}
   - component: {fileID: 905431377}
-  - component: {fileID: 905431378}
   m_Layer: 0
   m_Name: Scientist
   m_TagString: Untagged
@@ -875,25 +874,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01c1e51feadaade4286127b7f9d60eed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvas: {fileID: 2016755343}
---- !u!114 &905431378
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 905431372}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4adb71393f7cb0499c66144473c8ff0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lines:
-  - "FORM\xDCL\xDC VERECEK M\u0130S\u0130N?"
+  finalCanvas: {fileID: 0}
+  lines: []
   talker: 
   dm: {fileID: 0}
   canvas: {fileID: 2016755343}
-  tmp: {fileID: 238281629}
+  tmp: {fileID: 0}
 --- !u!1 &1007447939
 GameObject:
   m_ObjectHideFlags: 0
@@ -1863,11 +1849,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 19605342124357907, guid: 608e85f35c31bc8438f47f41b32a7c4b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 18.47
+      value: -3.96
       objectReference: {fileID: 0}
     - target: {fileID: 19605342124357907, guid: 608e85f35c31bc8438f47f41b32a7c4b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.19
+      value: -1.27
       objectReference: {fileID: 0}
     - target: {fileID: 19605342124357907, guid: 608e85f35c31bc8438f47f41b32a7c4b, type: 3}
       propertyPath: m_LocalPosition.z
