@@ -57,4 +57,21 @@ public class DialogueSender : MonoBehaviour
         }
     }
 
+    public void PopUpText()
+    {
+        dm.talkableObject = talkableObject;
+        dm.talkers = talkers;
+        dm.playersTalkElements = playersTalkElements;
+        dm.talker = talker;
+        dm.lines = lines;
+        canvas.gameObject.SetActive(true);
+    }
+
+    public void PopCloseText()
+    {
+        dm.isDialogueStarted = false;
+        tmp.text = string.Empty;
+        canvas.gameObject.SetActive(false);
+    }
+
 }

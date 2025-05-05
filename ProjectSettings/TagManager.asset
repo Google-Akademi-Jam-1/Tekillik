@@ -8,6 +8,7 @@ TagManager:
   - EnemyBullet
   - EnemySoldier
   - PlayerBullet
+  - scientist
   layers:
   - Default
   - TransparentFX

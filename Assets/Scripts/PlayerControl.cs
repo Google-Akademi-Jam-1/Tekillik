@@ -34,11 +34,16 @@ public class PlayerControl : MonoBehaviour
     bool onGround = true;
     bool isDead = false;
     bool isShootEnabled = true;
+    DialogueSender dialogueSender;
 
     public bool gamePaused;
 
     private void Awake()
     {
+        if(SceneManager.GetActiveScene().buildIndex == 5)
+        {
+            dialogueSender = GetComponent<DialogueSender>();
+        }
         enemySoldierController = Object.FindObjectOfType<EnemySoldierController>();
         rb = GetComponent<Rigidbody2D>();
         feetCollider = GetComponent<BoxCollider2D>();
@@ -46,14 +51,11 @@ public class PlayerControl : MonoBehaviour
         charCollider = GetComponent<CapsuleCollider2D>();
     }
 
-    private void Start()
-    {
-    }
+    // ÝS SHOOT ENABLED
 
     private void Update()
     {
         rb.velocity = new Vector2(0.0f, rb.velocity.y);
-        isShootEnabled = SceneManager.GetActiveScene().buildIndex != 5 && SceneManager.GetActiveScene().buildIndex != 7;
         
         if (isDead || gamePaused) { return; }
         if (charCollider.IsTouchingLayers(LayerMask.GetMask("enemyBullet")))
@@ -69,12 +71,18 @@ public class PlayerControl : MonoBehaviour
         HandleControls();
     }
 
+    private void Start()
+    {
+        isShootEnabled = SceneManager.GetActiveScene().buildIndex != 5 && SceneManager.GetActiveScene().buildIndex != 7;
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("EnemyBullet"))
         {
             Die();
         }
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -85,6 +93,11 @@ public class PlayerControl : MonoBehaviour
         if (isFalling && feetCollider.IsTouchingLayers(LayerMask.GetMask("platform")))
         {
             anim.SetBool("isJumping", false);
+        }
+        if (collision.gameObject.CompareTag("scientist"))
+        {
+            isShootEnabled = true;
+            dialogueSender.PopCloseText();
         }
     }
     //private void OnCollisionEnter2D(Collision2D collision)
@@ -113,6 +126,11 @@ public class PlayerControl : MonoBehaviour
         {
             Jump();
         }
+        if(Input.GetKeyDown(KeyCode.Mouse0) && SceneManager.GetActiveScene().buildIndex == 5 && !isShootEnabled)
+        {
+            dialogueSender.PopUpText();
+        }
+
         if (Input.GetKeyDown(KeyCode.Mouse0) && isShootEnabled)
         {
             Shoot();
