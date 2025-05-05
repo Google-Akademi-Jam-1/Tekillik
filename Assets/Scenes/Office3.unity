@@ -6134,7 +6134,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 14
-      m_TileSpriteIndex: 30
+      m_TileSpriteIndex: 31
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -6144,7 +6144,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 15
-      m_TileSpriteIndex: 29
+      m_TileSpriteIndex: 30
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -6154,7 +6154,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 16
-      m_TileSpriteIndex: 28
+      m_TileSpriteIndex: 29
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -6464,7 +6464,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 17
-      m_TileSpriteIndex: 27
+      m_TileSpriteIndex: 28
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -7711,6 +7711,8 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 175
     m_Data: {fileID: -1583180551, guid: 6e968f81ec8930c48b6b3004b77f1886, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 1
     m_Data: {fileID: -677212676, guid: 6e968f81ec8930c48b6b3004b77f1886, type: 3}
   - m_RefCount: 1
@@ -7719,8 +7721,6 @@ Tilemap:
     m_Data: {fileID: 1744670840, guid: 6e968f81ec8930c48b6b3004b77f1886, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: -133232063, guid: 6e968f81ec8930c48b6b3004b77f1886, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
   m_TileMatrixArray:
   - m_RefCount: 732
     m_Data:
@@ -7895,8 +7895,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.022566557, y: 0}
-  m_Size: {x: 1.9477773, y: 2}
+  m_Offset: {x: -1.3026539, y: 0.58911157}
+  m_Size: {x: 4.507953, y: 3.899632}
   m_Direction: 0
 --- !u!212 &932888009
 SpriteRenderer:
@@ -7979,7 +7979,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lines:
   - "Profes\xF6r: Ho\u015Fgeldin Locke, nas\u0131ls\u0131n?"
-  - "Locke: \u0130yiyim profes\xF6r sa\u011Folun, son g\xF6revde de her \u015Fey
+  - "Locke: \u0130yiyim profes\xF6r sa\u011F olun, son g\xF6revde de her \u015Fey
     istedi\u011Fimiz gibi gitti."
   - "Profes\xF6r: Biliyorum, haberlerini anbean takip ediyordum zaten."
   - "\u0130nan bana, buraya ilk geldi\u011Fin zamanki o tela\u015Fl\u0131 halinden
@@ -7988,10 +7988,10 @@ MonoBehaviour:
   - "Locke: Evet, zamanla al\u0131\u015Ft\u0131m buradaki ko\u015Fullara. \xDCstelik
     insanlarla da \xE7ok iyi anla\u015F\u0131yorum."
   - "Sanki aile gibiler. Hi\xE7 sahip olamad\u0131\u011F\u0131m o aile..."
-  - "Ama bir \u015Fey dikkatimi \xE7ekti profes\xF6r.."
+  - "Ama bir \u015Fey dikkatimi \xE7ekti profes\xF6r."
   - "Profes\xF6r: Nedir?"
   - "Locke: Burada kime sorsam onlar da benim gibi ailesiz b\xFCy\xFCm\xFC\u015F
-    insanlar. Ve hepsi de bekar.."
+    insanlar. Ve hepsi de bekar."
   - "Sanki birileri Tekillik i\xE7in \xF6zellikle d\xFCnyan\u0131n en yaln\u0131z
     insanlar\u0131n\u0131 se\xE7mi\u015F gibi."
   - "Profes\xF6r: Ne \xF6nemi var ki yaln\u0131zl\u0131\u011F\u0131n? Ge\xE7mi\u015Fe
@@ -8045,6 +8045,11 @@ MonoBehaviour:
   dm: {fileID: 1408824319}
   canvas: {fileID: 1408824318}
   tmp: {fileID: 1408824320}
+  talkers:
+  - player
+  - boss
+  talkableObject: 1
+  playersTalkElements: 0100000004000000050000000600000008000000090000000e00000012000000170000001a0000001b0000001d000000
 --- !u!1 &1004951032
 GameObject:
   m_ObjectHideFlags: 0
@@ -32542,7 +32547,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6829067404700411541, guid: 1d43080e1b4a5e04581929d0055253c5, type: 3}
       propertyPath: textSpeed
-      value: 0.1
+      value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: 6829067404700411541, guid: 1d43080e1b4a5e04581929d0055253c5, type: 3}
       propertyPath: lines.Array.size
@@ -32735,6 +32740,9 @@ MonoBehaviour:
   dm: {fileID: 1408824319}
   canvas: {fileID: 1408824318}
   tmp: {fileID: 0}
+  talkers: []
+  talkableObject: 0
+  playersTalkElements: 
 --- !u!1001 &8819767401970125389
 PrefabInstance:
   m_ObjectHideFlags: 0
