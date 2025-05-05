@@ -185,6 +185,10 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 232630b26aeb6de49a572d7206aa7130, type: 3}
     volume: 0.303
     pitch: 1
+  - name: main menu music
+    clip: {fileID: 8300000, guid: ebaf3ded55f2b3c47ba1049050228285, type: 3}
+    volume: 0.303
+    pitch: 1
 --- !u!82 &6730175966542007728
 AudioSource:
   m_ObjectHideFlags: 0
