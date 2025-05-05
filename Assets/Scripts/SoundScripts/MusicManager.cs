@@ -27,9 +27,9 @@ public class MusicManager : MonoBehaviour
     private void Start()
     {
         string sceneName = SceneManager.GetActiveScene().name;
+        Debug.Log("Scene name is" + sceneName);
         NewLevel(sceneName);
     }
-    
 
     public void NewLevel(string sceneName)
     {

@@ -15,7 +15,12 @@ public class LevelLoader : MonoBehaviour
         StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
     }
 
-    IEnumerator LoadLevel(int levelIndex)
+    public void LoadLevelAtIndex(int idx)
+    {
+        StartCoroutine(LoadLevel(idx));
+    }
+
+    public IEnumerator LoadLevel(int levelIndex)
     {
         animator.SetTrigger("start");
 
