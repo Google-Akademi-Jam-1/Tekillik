@@ -50,8 +50,9 @@ public class PlayerControl : MonoBehaviour
 
     private void Update()
     {
+        rb.velocity = new Vector2(0.0f, rb.velocity.y);
         isShootEnabled = SceneManager.GetActiveScene().buildIndex != 5 && SceneManager.GetActiveScene().buildIndex != 7;
-    
+        
         if (isDead) { return; }
         if (charCollider.IsTouchingLayers(LayerMask.GetMask("enemyBullet")))
         {
