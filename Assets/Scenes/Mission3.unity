@@ -875,6 +875,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   finalCanvas: {fileID: 2016755343}
+  loader: {fileID: 1631330037}
 --- !u!1 &1007447939
 GameObject:
   m_ObjectHideFlags: 0
@@ -1727,6 +1728,8 @@ MonoBehaviour:
   dm: {fileID: 2062189327}
   canvas: {fileID: 2062189326}
   tmp: {fileID: 1973114657}
+  talkers: []
+  playersTalkElements: 
 --- !u!70 &1292555518
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -1908,6 +1911,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 19605342124357907, guid: 608e85f35c31bc8438f47f41b32a7c4b, type: 3}
   m_PrefabInstance: {fileID: 1534299634}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1631330037 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3857345673970030818, guid: bdb73c86dd29f874680c5a91e7c8df89, type: 3}
+  m_PrefabInstance: {fileID: 1434738495}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6dacbedf9c0176b4f96677acea015c9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1739793751
 GameObject:
   m_ObjectHideFlags: 0
@@ -28976,7 +28990,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2016755340
 RectTransform:
   m_ObjectHideFlags: 0

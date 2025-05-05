@@ -8,13 +8,16 @@ public class Decision : MonoBehaviour
 {
     [SerializeField]
     Canvas finalCanvas;
+    [SerializeField]
+    LevelLoader loader;
     public void GiveFormula()
     {
-        SceneManager.LoadScene(2);
+        MusicManager.instance.NewLevel("Office1");
+        loader.LoadLevelAtIndex(2);
     }
     public void ExitLoop()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        loader.LoadNextLevel();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
