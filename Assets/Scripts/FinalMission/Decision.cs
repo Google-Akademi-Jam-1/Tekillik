@@ -17,43 +17,11 @@ public class Decision : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
-    [SerializeField]
-    string[] lines;
-
-    [SerializeField]
-    string talker;
-
-    [SerializeField]
-    DialogueManager dm;
-
-    [SerializeField]
-    Canvas canvas;
-
-    [SerializeField]
-    TextMeshProUGUI tmp;
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            dm.talker = talker;
-            dm.lines = lines;
-            canvas.gameObject.SetActive(true);
+            finalCanvas.gameObject.SetActive(true);
         }
     }
-
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            if (canvas.gameObject.activeSelf)
-            {
-                dm.isDialogueStarted = false;
-                tmp.text = string.Empty;
-                canvas.gameObject.SetActive(false);
-            }
-        }
-    }
-
 }

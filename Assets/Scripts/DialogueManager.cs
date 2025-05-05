@@ -22,14 +22,12 @@ public class DialogueManager : MonoBehaviour
 
     public bool isDialogueStarted = false;
     bool writingLine = false;
-    bool isInLastLevel = false;
     public string talker;
 
     private void Start()
     {
         index = 0;
         textComp.text = string.Empty;
-        isInLastLevel = SceneManager.GetActiveScene().buildIndex == 7;
     }
 
     private void Update()
@@ -63,7 +61,6 @@ public class DialogueManager : MonoBehaviour
 
     void NextLine()
     {
-        if (isInLastLevel) { return; }
         index++;
         if (index >= lines.Length)
         {

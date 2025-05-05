@@ -874,12 +874,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01c1e51feadaade4286127b7f9d60eed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  finalCanvas: {fileID: 0}
-  lines: []
-  talker: 
-  dm: {fileID: 0}
-  canvas: {fileID: 2016755343}
-  tmp: {fileID: 0}
+  finalCanvas: {fileID: 2016755343}
 --- !u!1 &1007447939
 GameObject:
   m_ObjectHideFlags: 0
