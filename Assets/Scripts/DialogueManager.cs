@@ -56,7 +56,6 @@ public class DialogueManager : MonoBehaviour
         }
         else if (!writingLine && isDialogueStarted && Input.GetKeyDown(KeyCode.E))
         {
-            Debug.Log(index);
             textComp.text = string.Empty;
             if(talkableObject)
             {

@@ -27,7 +27,6 @@ public class MusicManager : MonoBehaviour
     private void Start()
     {
         string sceneName = SceneManager.GetActiveScene().name;
-        Debug.Log("Scene name is" + sceneName);
         NewLevel(sceneName);
     }
 
@@ -35,8 +34,6 @@ public class MusicManager : MonoBehaviour
     {
         if (sceneName == "Mission1")
         {
-            Debug.Log("mission1 geldi");
-
             source.Stop();
             PlayMusic("level1 music");
         }

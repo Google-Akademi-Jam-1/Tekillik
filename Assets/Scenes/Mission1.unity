@@ -47295,6 +47295,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6636637176115842201, guid: c7669cea5adfdfd4f8ad979c842e2224, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1925701316}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -48318,7 +48322,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5088645991229980054, guid: 5ceec01c280ea6a47a9093446c2c3530, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.46926075
+      value: 0.46943077
       objectReference: {fileID: 0}
     - target: {fileID: 5513890608811213984, guid: 5ceec01c280ea6a47a9093446c2c3530, type: 3}
       propertyPath: m_BoundingShape2D
@@ -48326,7 +48330,7 @@ PrefabInstance:
       objectReference: {fileID: 266415251}
     - target: {fileID: 6251686571167135899, guid: 5ceec01c280ea6a47a9093446c2c3530, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.3000007
+      value: -4.897511
       objectReference: {fileID: 0}
     - target: {fileID: 6251686571167135899, guid: 5ceec01c280ea6a47a9093446c2c3530, type: 3}
       propertyPath: m_LocalPosition.y
@@ -48376,6 +48380,22 @@ PrefabInstance:
       propertyPath: m_Follow
       value: 
       objectReference: {fileID: 1925701316}
+    - target: {fileID: 8608850921326963052, guid: 5ceec01c280ea6a47a9093446c2c3530, type: 3}
+      propertyPath: m_BiasX
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8608850921326963052, guid: 5ceec01c280ea6a47a9093446c2c3530, type: 3}
+      propertyPath: m_ScreenX
+      value: 0.48
+      objectReference: {fileID: 0}
+    - target: {fileID: 8608850921326963052, guid: 5ceec01c280ea6a47a9093446c2c3530, type: 3}
+      propertyPath: m_DeadZoneWidth
+      value: 0.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 8608850921326963052, guid: 5ceec01c280ea6a47a9093446c2c3530, type: 3}
+      propertyPath: m_DeadZoneHeight
+      value: 0.12
+      objectReference: {fileID: 0}
     - target: {fileID: 9061150178445040820, guid: 5ceec01c280ea6a47a9093446c2c3530, type: 3}
       propertyPath: far clip plane
       value: 1000
@@ -48557,11 +48577,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5631966420593587369, guid: 63622fdb22a386a46925edca7e8b33d0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 91.276
+      value: 92.54
       objectReference: {fileID: 0}
     - target: {fileID: 5631966420593587369, guid: 63622fdb22a386a46925edca7e8b33d0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 14.673
+      value: 14.61
       objectReference: {fileID: 0}
     - target: {fileID: 5631966420593587369, guid: 63622fdb22a386a46925edca7e8b33d0, type: 3}
       propertyPath: m_LocalPosition.z

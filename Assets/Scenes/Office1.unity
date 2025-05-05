@@ -32310,6 +32310,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DialogueCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 1166910406693856671, guid: 1d43080e1b4a5e04581929d0055253c5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3332039178201077225, guid: 1d43080e1b4a5e04581929d0055253c5, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -32388,6 +32392,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3332039178201077225, guid: 1d43080e1b4a5e04581929d0055253c5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6439098837290148627, guid: 1d43080e1b4a5e04581929d0055253c5, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: f54bc3e56c3bd104fb854c077f97b325, type: 2}
+    - target: {fileID: 6439098837290148627, guid: 1d43080e1b4a5e04581929d0055253c5, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -2171107179525409312, guid: f54bc3e56c3bd104fb854c077f97b325, type: 2}
+    - target: {fileID: 6439098837290148627, guid: 1d43080e1b4a5e04581929d0055253c5, type: 3}
+      propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
