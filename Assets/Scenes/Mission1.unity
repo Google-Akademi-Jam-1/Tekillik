@@ -48425,6 +48425,55 @@ PrefabInstance:
       propertyPath: canvas
       value: 
       objectReference: {fileID: 503202783}
+    - target: {fileID: 5050248100657840770, guid: 63622fdb22a386a46925edca7e8b33d0, type: 3}
+      propertyPath: lines.Array.size
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5050248100657840770, guid: 63622fdb22a386a46925edca7e8b33d0, type: 3}
+      propertyPath: lines.Array.data[0]
+      value: "Kreig: \xD6l\xFCms\xFCz Hisar'a s\u0131z\u0131p da buraya kadar gelebileni
+        ilk defa g\xF6r\xFCyorum."
+      objectReference: {fileID: 0}
+    - target: {fileID: 5050248100657840770, guid: 63622fdb22a386a46925edca7e8b33d0, type: 3}
+      propertyPath: lines.Array.data[1]
+      value: "\xDCstelik silahs\u0131z... Kimsin sen?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5050248100657840770, guid: 63622fdb22a386a46925edca7e8b33d0, type: 3}
+      propertyPath: lines.Array.data[2]
+      value: "Player: Senin sahip oldu\u011Fun iradeden \xE7ok daha y\xFCcesi beni
+        buraya g\xF6nderdi."
+      objectReference: {fileID: 0}
+    - target: {fileID: 5050248100657840770, guid: 63622fdb22a386a46925edca7e8b33d0, type: 3}
+      propertyPath: lines.Array.data[3]
+      value: "Ba\u015Flataca\u011F\u0131n d\xFCnya sava\u015F\u0131n\u0131 engellemeye
+        geldim."
+      objectReference: {fileID: 0}
+    - target: {fileID: 5050248100657840770, guid: 63622fdb22a386a46925edca7e8b33d0, type: 3}
+      propertyPath: lines.Array.data[4]
+      value: "General: Neymi\u015F bu \xE7ok y\xFCce irade, en \xFCst d\xFCzey generalin
+        bile haberinin olmad\u0131\u011F\u0131?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5050248100657840770, guid: 63622fdb22a386a46925edca7e8b33d0, type: 3}
+      propertyPath: lines.Array.data[5]
+      value: "Player: Gelecekten insanlar. Senin nas\u0131l y\u0131k\u0131mlara yol
+        a\xE7aca\u011F\u0131n\u0131 bilen ve buna izin vermeyecek olanlar."
+      objectReference: {fileID: 0}
+    - target: {fileID: 5050248100657840770, guid: 63622fdb22a386a46925edca7e8b33d0, type: 3}
+      propertyPath: lines.Array.data[6]
+      value: 'Kreig: Hahahaha.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5050248100657840770, guid: 63622fdb22a386a46925edca7e8b33d0, type: 3}
+      propertyPath: lines.Array.data[7]
+      value: "Do\u011Fru mu anlad\u0131m? K\xF6t\xFCleri yok ediyorsunuz yani."
+      objectReference: {fileID: 0}
+    - target: {fileID: 5050248100657840770, guid: 63622fdb22a386a46925edca7e8b33d0, type: 3}
+      propertyPath: lines.Array.data[8]
+      value: "Ve d\xFCnyadaki tek k\xF6t\xFC siz oluyorsunuz."
+      objectReference: {fileID: 0}
+    - target: {fileID: 5050248100657840770, guid: 63622fdb22a386a46925edca7e8b33d0, type: 3}
+      propertyPath: lines.Array.data[9]
+      value: "G\xFCl\xFCn\xE7..."
+      objectReference: {fileID: 0}
     - target: {fileID: 5631966420593587369, guid: 63622fdb22a386a46925edca7e8b33d0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 88.99
