@@ -33,8 +33,6 @@ public class MusicManager : MonoBehaviour
 
     public void NewLevel(string sceneName)
     {
-        Debug.Log(sceneName);
-
         if (sceneName == "Mission1")
         {
             Debug.Log("mission1 geldi");
