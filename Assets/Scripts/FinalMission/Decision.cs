@@ -27,7 +27,7 @@ public class Decision : MonoBehaviour
     }
     public void ExitLoop()
     {
-        finalCanvas.gameObject.SetActive(false);
+        Destroy(finalCanvas);
         StartCoroutine(DontGiveFormula());
     }
 
